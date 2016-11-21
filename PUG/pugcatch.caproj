@@ -43,54 +43,6 @@
         <prop name="Use high-DPI display">Yes</prop>
     </configuration-settings>
     <object-folder>
-        <object-type name="puppy" sid="754837803334763">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="466502659851435" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\xsery\Projects\PUG\images\u19.jpg" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="puppy2" sid="910239660907775">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="583906625078249" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\xsery\Projects\PUG\images\u19.jpg" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="puppy3" sid="543032494842674">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="725227087434233" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\xsery\Projects\PUG\images\u19.jpg" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="puppy4" sid="228851198365646">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="109087871758586" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\xsery\Projects\PUG\images\u19.jpg" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="puppy5" sid="160343364852766">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="922022182990223" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\xsery\Projects\PUG\images\u19.jpg" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="puppy6" sid="477957774990449">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="694539911383840" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\xsery\Projects\PUG\images\u19.jpg" />
-                </animation>
-            </animation-folder>
-        </object-type>
         <object-type name="Sprite" sid="915388448025729">
             <plugin id="Sprite" />
             <behaviors>

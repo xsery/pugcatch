@@ -98,10 +98,10 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>273</x>
-                        <y>363</y>
+                        <x>369</x>
+                        <y>477.766967773</y>
                         <z>0</z>
-                        <width>35</width>
+                        <width>29</width>
                         <height>20</height>
                         <depth>0</depth>
                         <hotspotX>0.461165041</hotspotX>
