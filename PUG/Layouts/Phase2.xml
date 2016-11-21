@@ -13,7 +13,11 @@
     </margins>
     <unbounded-scrolling>0</unbounded-scrolling>
     <layers>
+<<<<<<< HEAD
         <layer name="background" sid="979737583550454">
+=======
+        <layer name="Backgound" sid="979737583550454">
+>>>>>>> c8d61983c160cba91188fb9cb13562d9879e14b2
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>0</transparent>
@@ -28,7 +32,147 @@
             <use-render-cells>0</use-render-cells>
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
-            <instances />
+            <instances>
+                <instance type="TiledBackground3" uid="0">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <hotspot>Top-left</hotspot>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>0</x>
+                        <y>0</y>
+                        <z>0</z>
+                        <width>1080</width>
+                        <height>720</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Sprite" uid="1">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>541</x>
+                        <y>169.5</y>
+                        <z>0</z>
+                        <width>1077</width>
+                        <height>19</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.526315808</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Sprite2" uid="5">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>539</x>
+                        <y>350.5</y>
+                        <z>0</z>
+                        <width>1078</width>
+                        <height>19</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.526315987</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Sprite2" uid="6">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>540.5</x>
+                        <y>551.5</y>
+                        <z>0</z>
+                        <width>1079</width>
+                        <height>19</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.526315987</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+            </instances>
+            <effects />
+        </layer>
+        <layer name="Objets" sid="132261990928348">
+            <initially-visible>1</initially-visible>
+            <background-color>255,255,255</background-color>
+            <transparent>1</transparent>
+            <parallax>
+                <x>1</x>
+                <y>1</y>
+            </parallax>
+            <zoom-rate>1</zoom-rate>
+            <opacity>1</opacity>
+            <force-own-texture>0</force-own-texture>
+            <global>0</global>
+            <use-render-cells>0</use-render-cells>
+            <blend-mode>0</blend-mode>
+            <effect-fallback>0</effect-fallback>
+            <instances>
+                <instance type="Sprite3" uid="2">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Bullet">
+                            <properties>
+                                <speed>400</speed>
+                                <acceleration>0</acceleration>
+                                <gravity>0</gravity>
+                                <bounce-off-solids>No</bounce-off-solids>
+                                <set-angle>Yes</set-angle>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>58</x>
+                        <y>258</y>
+                        <z>0</z>
+                        <width>66</width>
+                        <height>37</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+            </instances>
             <effects />
         </layer>
         <layer name="objects" sid="350014084398331">

@@ -10,10 +10,14 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
+<<<<<<< HEAD
         <layout active="1" order="0">Phase1</layout>
         <layout order="1">Phase2</layout>
         <event-sheet order="2">Event sheet 1</event-sheet>
         <event-sheet order="3">Event sheet 2</event-sheet>
+=======
+        <layout active="1" order="2">Phase2</layout>
+>>>>>>> c8d61983c160cba91188fb9cb13562d9879e14b2
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -31,10 +35,15 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="music-folder/" />
         <folder expanded="1" path="file-folder/Icons/" />
         <folder expanded="1" path="animation-folder/Sprite/" />
+<<<<<<< HEAD
         <folder expanded="1" path="animation-folder/wallleft/" />
         <folder expanded="1" path="animation-folder/wallright/" />
         <folder expanded="1" path="animation-folder/walltop/" />
         <folder expanded="1" path="animation-folder/wallbottom/" />
         <folder expanded="1" path="animation-folder/background/" />
+=======
+        <folder expanded="1" path="animation-folder/Sprite2/" />
+        <folder expanded="1" path="animation-folder/Sprite3/" />
+>>>>>>> c8d61983c160cba91188fb9cb13562d9879e14b2
     </folders-expanded>
 </c2uistate>
