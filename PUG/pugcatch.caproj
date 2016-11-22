@@ -11,6 +11,7 @@
     <saved-with-version>23900</saved-with-version>
     <used-plugins>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
@@ -176,6 +177,10 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\xsery\Projects\Assets\BG.png" />
                 </animation>
             </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground" sid="893117100954455">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\irlan.gomes\Documents\font\uea\pugcatch\Assets\rua_temp.png" />
         </object-type>
     </object-folder>
     <families />
