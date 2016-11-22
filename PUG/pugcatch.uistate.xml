@@ -13,10 +13,13 @@ you probably do not want to add any .uistate.xml files to the repository.-->
 <<<<<<< HEAD
         <layout active="1" order="2">Phase2</layout>
         <layout order="4">Phase1</layout>
+<<<<<<< HEAD
 =======
         <layout order="0">Phase1</layout>
         <layout active="1" order="1">Phase2</layout>
 >>>>>>> parent of c8d6198... add comportamento do carro e imagens temporarias
+=======
+>>>>>>> 778197f4281fdeab256ea960be5bfc49780e4935
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -34,6 +37,9 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="music-folder/" />
         <folder expanded="1" path="file-folder/Icons/" />
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 778197f4281fdeab256ea960be5bfc49780e4935
         <folder expanded="1" path="animation-folder/Sprite2/" />
         <folder expanded="1" path="animation-folder/Sprite3/" />
 =======
