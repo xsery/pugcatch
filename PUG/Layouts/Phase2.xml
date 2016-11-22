@@ -4,8 +4,8 @@
     <sid>618458505100288</sid>
     <event-sheet>Event sheet 2</event-sheet>
     <size>
-        <width>1080</width>
-        <height>720</height>
+        <width>1708</width>
+        <height>960</height>
     </size>
     <margins>
         <horizontal>500</horizontal>
@@ -13,7 +13,7 @@
     </margins>
     <unbounded-scrolling>0</unbounded-scrolling>
     <layers>
-        <layer name="Backgound" sid="979737583550454">
+        <layer name="Layer 0" sid="979737583550454">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>0</transparent>
@@ -28,6 +28,7 @@
             <use-render-cells>0</use-render-cells>
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
+<<<<<<< HEAD
             <instances>
                 <instance type="TiledBackground3" uid="0">
                     <properties>
@@ -49,28 +50,6 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite" uid="1">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>541</x>
-                        <y>169.5</y>
-                        <z>0</z>
-                        <width>1077</width>
-                        <height>19</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.526315808</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
                 <instance type="Sprite2" uid="5">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
@@ -82,13 +61,13 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>539</x>
-                        <y>350.5</y>
+                        <y>357.25</y>
                         <z>0</z>
                         <width>1078</width>
                         <height>19</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.526315987</hotspotY>
+                        <hotspotY>0.526315808</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -104,13 +83,35 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>540.5</x>
-                        <y>551.5</y>
+                        <y>558.25</y>
                         <z>0</z>
                         <width>1079</width>
                         <height>19</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.526315987</hotspotY>
+                        <hotspotY>0.526315808</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Sprite2" uid="1">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>539</x>
+                        <y>162.75</y>
+                        <z>0</z>
+                        <width>1078</width>
+                        <height>19</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.526315808</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -169,6 +170,9 @@
                     </world>
                 </instance>
             </instances>
+=======
+            <instances />
+>>>>>>> parent of c8d6198... add comportamento do carro e imagens temporarias
             <effects />
         </layer>
     </layers>
