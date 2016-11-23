@@ -10,7 +10,9 @@
     <unique-id>2scmz2p4ogrl8</unique-id>
     <saved-with-version>23900</saved-with-version>
     <used-plugins>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Spritefont2" version="1">Sprite font</plugin>
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
@@ -43,32 +45,6 @@
         <prop name="Use high-DPI display">Yes</prop>
     </configuration-settings>
     <object-folder>
-        <object-type name="Sprite" sid="915388448025729">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Solid" sid="875989930417353">
-                    <behavior id="solid" />
-                </behavior-type>
-                <behavior-type name="8Direction" sid="938912418155315">
-                    <behavior id="EightDir" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="650484136864772" speed="5">
-                    <frame duration="1" hotspotX="0.461165" hotspotY="0.485437" original-source="C:\Users\xsery\Projects\Assets\PUG Mãe\Pug_03.png">
-                        <collision-poly>
-                            <point x="0.092233" y="0.184466" />
-                            <point x="0.5" y="0.23301" />
-                            <point x="0.883495" y="0.23301" />
-                            <point x="0.966019" y="0.495146" />
-                            <point x="0.873786" y="0.747573" />
-                            <point x="0.0825243" y="0.834951" />
-                            <point x="0.00970874" y="0.495146" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
         <object-type name="wallleft" sid="123219634445152">
             <plugin id="Sprite" />
             <behaviors>
@@ -129,6 +105,66 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="mae" sid="683237655268063">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="8Direction" sid="271920165639400">
+                    <behavior id="EightDir" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="3" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="855147858865100" speed="5">
+                    <frame duration="1" hotspotX="-0.0339806" hotspotY="0.485437" original-source="C:\Users\irlan.gomes\Documents\font\uea\pugcatch\Assets\PUG Mãe\Pug_03.png" />
+                    <frame duration="1" hotspotX="-0.0339806" hotspotY="0.485437" original-source="C:\Users\irlan.gomes\Documents\font\uea\pugcatch\Assets\PUG Mãe\Pug_06.png" />
+                    <frame duration="1" hotspotX="-0.0339806" hotspotY="0.485437" original-source="C:\Users\irlan.gomes\Documents\font\uea\pugcatch\Assets\PUG Mãe\Pug_08.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Keyboard" sid="739559406465260">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="filho" sid="275123694969210">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="734696680475663" speed="5">
+                    <frame duration="1" hotspotX="1.25" hotspotY="1.25" original-source="C:\Users\irlan.gomes\Documents\font\uea\pugcatch\Assets\pug.png">
+                        <collision-poly>
+                            <point x="0.1875" y="0.1875" />
+                            <point x="0.8125" y="0.1875" />
+                            <point x="0.6875" y="0.5" />
+                            <point x="0.75" y="0.75" />
+                            <point x="0.5" y="0.8125" />
+                            <point x="0.25" y="0.75" />
+                            <point x="0.25" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="corpo" sid="286354075688843">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="3" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="273025454354301" speed="5">
+                    <frame duration="1" hotspotX="1" hotspotY="0.5" original-source="C:\Users\irlan.gomes\Documents\font\uea\pugcatch\Assets\pug.png">
+                        <collision-poly>
+                            <point x="0.1875" y="0.1875" />
+                            <point x="0.8125" y="0.1875" />
+                            <point x="0.6875" y="0.5" />
+                            <point x="0.75" y="0.75" />
+                            <point x="0.5" y="0.8125" />
+                            <point x="0.25" y="0.75" />
+                            <point x="0.25" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="1.00485" hotspotY="0.485437" original-source="C:\Users\irlan.gomes\Documents\font\uea\pugcatch\Assets\PUG Mãe\Pug_06.png" />
+                    <frame duration="1" hotspotX="1.00485" hotspotY="0.485437" original-source="C:\Users\irlan.gomes\Documents\font\uea\pugcatch\Assets\PUG Mãe\Pug_08.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="SpriteFont" sid="190128557998223">
+            <plugin id="Spritefont2" />
+            <texture />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -138,7 +174,9 @@
         <event-sheet>Event sheet 1.xml</event-sheet>
         <event-sheet>Event sheet 2.xml</event-sheet>
     </event-folder>
-    <global-instances />
+    <global-instances>
+        <global-instance type="Keyboard" uid="6" />
+    </global-instances>
     <sounds-folder />
     <music-folder />
     <files-folder>
