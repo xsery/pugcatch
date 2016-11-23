@@ -76,6 +76,10 @@
                             <param id="2" name="X">lerp(mae.ImagePointX(0),mae.ImagePointX(0),0.9)</param>
                             <param id="3" name="Y">lerp(mae.ImagePointY(0),mae.ImagePointY(0),0.9)</param>
                         </action>
+                        <action id="-29" name="Move to object" sid="928071881549862" type="corpo">
+                            <param id="0" name="Where">1</param>
+                            <param id="1" name="Object">mae</param>
+                        </action>
                     </actions>
                 </event-block>
             </sub-events>
