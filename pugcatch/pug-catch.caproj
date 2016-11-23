@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>pug-catch</name>
+    <description>snake clone</description>
+    <version>1.0.0.1</version>
+    <author>sizzle-games</author>
+    <author-email>sizzgames@gmail.com</author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>2m2oqhlgof90t</unique-id>
+    <saved-with-version>23900</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="ScirraArcadeV4" version="1">Scirra Arcade</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Spritefont2" version="1">Sprite font</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
+        <behavior author="Scirra" id="wrap" version="1">Wrap</behavior>
+    </used-behaviors>
+    <used-effects>
+        <effect author="Scirra" id="pixellate">Pixellate</effect>
+    </used-effects>
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>1280</width>
+        <height>800</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">No</prop>
+        <prop name="Downscaling">Low quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">Low quality</prop>
+        <prop name="Loader style">Percentage text</prop>
+        <prop name="Orientations">Landscape</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="snake_head" sid="1469550750304854">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="8Direction" sid="9819487546771331">
+                    <behavior id="EightDir" />
+                </behavior-type>
+                <behavior-type name="Wrap" sid="2841394549778197">
+                    <behavior id="wrap" />
+                </behavior-type>
+            </behaviors>
+            <effects>
+                <effect-type name="Pixellate">
+                    <effect id="pixellate" />
+                </effect-type>
+            </effects>
+            <animation-folder>
+                <animation framecount="3" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2684155700549894" speed="15">
+                    <frame duration="1" hotspotX="-0.0339806" hotspotY="0.504854" original-source="C:\Users\irlan.gomes\Documents\font\uea\pugcatch\Assets\PUG Mãe\Pug_03.png" />
+                    <frame duration="1" hotspotX="-0.0339806" hotspotY="0.504854" original-source="C:\Users\irlan.gomes\Documents\font\uea\pugcatch\Assets\PUG Mãe\Pug_06.png" />
+                    <frame duration="1" hotspotX="-0.0339806" hotspotY="0.504854" original-source="C:\Users\irlan.gomes\Documents\font\uea\pugcatch\Assets\PUG Mãe\Pug_08.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="snake_body" sid="9039498961996566">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Variable1" sid="2771274597933873" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="3" loop="1" name="Default" pingpong="1" repeatcount="0" repeatto="5" sid="119275230448001" speed="15">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\irlan.gomes\Documents\font\uea\pugcatch\Assets\pug.png">
+                        <collision-poly>
+                            <point x="0.1875" y="0.1875" />
+                            <point x="0.8125" y="0.1875" />
+                            <point x="0.6875" y="0.5" />
+                            <point x="0.75" y="0.75" />
+                            <point x="0.5" y="0.8125" />
+                            <point x="0.25" y="0.75" />
+                            <point x="0.25" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="grass_hopper" sid="285224910631804">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9792182404769709" speed="10">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\irlan.gomes\Documents\font\uea\pugcatch\Assets\pug.png">
+                        <collision-poly>
+                            <point x="0.569811" y="0.330189" />
+                            <point x="0.5" y="0.316038" />
+                            <point x="0.449057" y="0.283019" />
+                            <point x="0.979245" y="0.948113" />
+                            <point x="0.5" y="0.70283" />
+                            <point x="0.0415094" y="0.896226" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="grass" sid="8463433725198543">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4538128497345363" speed="5">
+                    <frame duration="1" hotspotX="0.503623" hotspotY="0.5" original-source="C:\Users\simon\Downloads\grass).jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="SpriteFont" sid="5567752350371045">
+            <plugin id="Spritefont2" />
+            <texture />
+        </object-type>
+        <object-type name="ScirraArcade" sid="4841506703728644">
+            <plugin id="ScirraArcadeV4" />
+        </object-type>
+        <object-type name="Keyboard" sid="7733910881745341">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="Audio" sid="7112417201386639">
+            <plugin id="Audio" />
+        </object-type>
+        <object-type name="TiledBackground" sid="487003914369582">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\irlan.gomes\Documents\font\uea\pugcatch\Assets\BG-pagina-inicial.png" />
+        </object-type>
+        <object-type name="Sprite" sid="475902381582205">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="757983414849445" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\irlan.gomes\Documents\font\uea\pugcatch\Assets\BG-pagina-inicial.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite2" sid="643336453767705">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="957454117555540" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\irlan.gomes\Documents\font\uea\pugcatch\Assets\botão_01.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\irlan.gomes\Documents\font\uea\pugcatch\Assets\botão-selecionando_01.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite3" sid="721672913129304">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="335466558197613" speed="5">
+                    <frame duration="1" hotspotX="0.501292" hotspotY="0.50165" original-source="C:\Users\irlan.gomes\Documents\font\uea\pugcatch\Assets\logo.png">
+                        <collision-poly>
+                            <point x="0.0956072" y="0.122112" />
+                            <point x="0.498708" y="0.445545" />
+                            <point x="0.971576" y="0.0363036" />
+                            <point x="0.968992" y="0.960396" />
+                            <point x="0.498708" y="0.973597" />
+                            <point x="0.0516796" y="0.933993" />
+                            <point x="0.0284238" y="0.49835" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>Jogo.xml</layout>
+        <layout>TelaPrincipal.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Event sheet 1.xml</event-sheet>
+        <event-sheet>Event sheet 2.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="ScirraArcade" uid="3" />
+        <global-instance type="Keyboard" uid="4" />
+        <global-instance type="Audio" uid="6">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <play-in-background>No</play-in-background>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+            </properties>
+        </global-instance>
+    </global-instances>
+    <sounds-folder>
+        <file name="SquareMotif1.m4a" />
+        <file name="SquareMotif1.ogg" />
+        <file name="Oops3.m4a" />
+        <file name="Oops3.ogg" />
+    </sounds-folder>
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>
