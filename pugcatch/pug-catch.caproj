@@ -202,8 +202,14 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="731787713242117" speed="5">
-                    <frame duration="1" hotspotX="-0.00997506" hotspotY="0.266667" original-source="C:\Users\irlan.gomes\Documents\font\uea\pugcatch\Assets\rua_temp.png">
-                        <image-point name="Imagepoint 1" x="1.00998" y="0.25641" />
+                    <frame duration="1" hotspotX="0.733333" hotspotY="-0.00997506" original-source="C:\Users\irlan.gomes\Documents\font\uea\pugcatch\Assets\rua_temp.png">
+                        <image-point name="Imagepoint 1" x="0.74359" y="1.00998" />
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
                     </frame>
                 </animation>
             </animation-folder>
@@ -219,14 +225,14 @@
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="323063688752735" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\irlan.gomes\Documents\font\uea\pugcatch\Assets\carro_temp.png">
                         <collision-poly>
-                            <point x="0.056" y="0.112903" />
-                            <point x="0.5" y="0.0806452" />
-                            <point x="0.932" y="0.137097" />
-                            <point x="1" y="0.5" />
-                            <point x="0.932" y="0.862903" />
-                            <point x="0.5" y="0.919355" />
-                            <point x="0.056" y="0.887097" />
-                            <point x="0" y="0.5" />
+                            <point x="0.887097" y="0.056" />
+                            <point x="0.919355" y="0.5" />
+                            <point x="0.862903" y="0.932" />
+                            <point x="0.5" y="1" />
+                            <point x="0.137097" y="0.932" />
+                            <point x="0.0806451" y="0.5" />
+                            <point x="0.112903" y="0.056" />
+                            <point x="0.5" y="0" />
                         </collision-poly>
                     </frame>
                 </animation>

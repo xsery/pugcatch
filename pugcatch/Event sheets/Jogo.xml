@@ -122,7 +122,7 @@
                 </action>
                 <action id="-10" name="Add to" sid="1223734710008954" type="System">
                     <param id="0" name="Variable">crecimento</param>
-                    <param id="1" name="Value">0.5</param>
+                    <param id="1" name="Value">0.1</param>
                 </action>
                 <action id="-10" name="Add to" sid="7724566469116819" type="System">
                     <param id="0" name="Variable">Score</param>
