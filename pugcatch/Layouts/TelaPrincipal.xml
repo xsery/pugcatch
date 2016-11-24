@@ -2,7 +2,7 @@
 <c2layout>
     <name>TelaPrincipal</name>
     <sid>880663623722765</sid>
-    <event-sheet>Event sheet 2</event-sheet>
+    <event-sheet>TelaPrincipal</event-sheet>
     <size>
         <width>1280</width>
         <height>800</height>
@@ -29,7 +29,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="Sprite" uid="7">
+                <instance type="bgprincipal" uid="7">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -51,7 +51,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite3" uid="9">
+                <instance type="logo" uid="9">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -92,7 +92,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="Sprite2" uid="8">
+                <instance type="botaoiniciar" uid="8">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>

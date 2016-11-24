@@ -10,10 +10,10 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout order="0">Jogo</layout>
-        <layout active="1" order="2">TelaPrincipal</layout>
-        <event-sheet order="1">Event sheet 1</event-sheet>
-        <event-sheet order="3">Event sheet 2</event-sheet>
+        <layout order="2">Jogo</layout>
+        <layout active="1" order="0">TelaPrincipal</layout>
+        <event-sheet order="3">Jogo</event-sheet>
+        <event-sheet order="1">TelaPrincipal</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -25,17 +25,23 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <folders-expanded>
         <folder expanded="1" path="object-folder/" />
         <folder expanded="1" path="layout-folder/" />
-        <folder expanded="1" path="event-folder/" />
-        <folder expanded="1" path="file-folder/" />
+        <folder expanded="0" path="event-folder/" />
+        <folder expanded="0" path="file-folder/" />
         <folder expanded="1" path="sound-folder/" />
         <folder expanded="1" path="music-folder/" />
         <folder expanded="1" path="file-folder/Icons/" />
-        <folder expanded="1" path="animation-folder/snake_head/" />
-        <folder expanded="1" path="animation-folder/snake_body/" />
-        <folder expanded="1" path="animation-folder/grass_hopper/" />
-        <folder expanded="1" path="animation-folder/grass/" />
-        <folder expanded="1" path="animation-folder/Sprite/" />
-        <folder expanded="1" path="animation-folder/Sprite2/" />
-        <folder expanded="1" path="animation-folder/Sprite3/" />
+        <folder expanded="1" path="animation-folder/cabeca/" />
+        <folder expanded="1" path="animation-folder/corpo/" />
+        <folder expanded="1" path="animation-folder/filhote/" />
+        <folder expanded="1" path="animation-folder/grama/" />
+        <folder expanded="1" path="animation-folder/bgprincipal/" />
+        <folder expanded="1" path="animation-folder/botaoiniciar/" />
+        <folder expanded="1" path="animation-folder/logo/" />
+        <folder expanded="1" path="animation-folder/casa/" />
+        <folder expanded="1" path="animation-folder/hidrante/" />
+        <folder expanded="1" path="animation-folder/rua/" />
+        <folder expanded="1" path="animation-folder/carro/" />
+        <folder expanded="1" path="animation-folder/correio/" />
+        <folder expanded="1" path="animation-folder/cerca/" />
     </folders-expanded>
 </c2uistate>

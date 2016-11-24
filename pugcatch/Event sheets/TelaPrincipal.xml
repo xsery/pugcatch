@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>TelaPrincipal</name>
+    <events>
+        <event-block sid="188271897336689">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="667555476096948" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">botaoiniciar</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="522995649617750" type="System">
+                    <param id="0" name="Layout">Jogo</param>
+                </action>
+                <action id="6" name="Stop" sid="362613833709867" type="Audio">
+                    <param id="0" name="Tag">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="634956983722350">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="599925741034200" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="275721059403949" type="Audio">
+                    <param id="0" name="Audio file">8bit Dogsong - Undertale</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

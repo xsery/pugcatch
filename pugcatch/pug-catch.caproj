@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2project>
     <name>pug-catch</name>
-    <description>snake clone</description>
+    <description>pug-cath</description>
     <version>1.0.0.1</version>
-    <author>sizzle-games</author>
-    <author-email>sizzgames@gmail.com</author-email>
+    <author>UEA</author>
+    <author-email></author-email>
     <author-website>http://</author-website>
     <app-id>com.mycompany.myapp</app-id>
     <unique-id>2m2oqhlgof90t</unique-id>
@@ -12,12 +12,14 @@
     <used-plugins>
         <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
         <plugin author="Scirra" id="ScirraArcadeV4" version="1">Scirra Arcade</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Spritefont2" version="1">Sprite font</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
     </used-plugins>
     <used-behaviors>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
         <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
         <behavior author="Scirra" id="wrap" version="1">Wrap</behavior>
     </used-behaviors>
@@ -49,7 +51,7 @@
         <prop name="Use high-DPI display">Yes</prop>
     </configuration-settings>
     <object-folder>
-        <object-type name="snake_head" sid="1469550750304854">
+        <object-type name="cabeca" sid="1469550750304854">
             <plugin id="Sprite" />
             <behaviors>
                 <behavior-type name="8Direction" sid="9819487546771331">
@@ -72,51 +74,34 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="snake_body" sid="9039498961996566">
+        <object-type name="corpo" sid="9039498961996566">
             <plugin id="Sprite" />
             <instance-variables>
                 <instance-variable name="Variable1" sid="2771274597933873" type="number" />
             </instance-variables>
             <animation-folder>
                 <animation framecount="3" loop="1" name="Default" pingpong="1" repeatcount="0" repeatto="5" sid="119275230448001" speed="15">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\irlan.gomes\Documents\font\uea\pugcatch\Assets\pug.png">
-                        <collision-poly>
-                            <point x="0.1875" y="0.1875" />
-                            <point x="0.8125" y="0.1875" />
-                            <point x="0.6875" y="0.5" />
-                            <point x="0.75" y="0.75" />
-                            <point x="0.5" y="0.8125" />
-                            <point x="0.25" y="0.75" />
-                            <point x="0.25" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.504854" original-source="C:\Users\irlan.gomes\Documents\font\uea\pugcatch\Assets\PUG Mãe\Pug_03.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.504854" original-source="C:\Users\irlan.gomes\Documents\font\uea\pugcatch\Assets\PUG Mãe\Pug_06.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.504854" original-source="C:\Users\irlan.gomes\Documents\font\uea\pugcatch\Assets\PUG Mãe\Pug_08.png" />
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="grass_hopper" sid="285224910631804">
+        <object-type name="filhote" sid="285224910631804">
             <plugin id="Sprite" />
             <animation-folder>
-                <animation framecount="1" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9792182404769709" speed="10">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\irlan.gomes\Documents\font\uea\pugcatch\Assets\pug.png">
-                        <collision-poly>
-                            <point x="0.569811" y="0.330189" />
-                            <point x="0.5" y="0.316038" />
-                            <point x="0.449057" y="0.283019" />
-                            <point x="0.979245" y="0.948113" />
-                            <point x="0.5" y="0.70283" />
-                            <point x="0.0415094" y="0.896226" />
-                        </collision-poly>
-                    </frame>
+                <animation framecount="3" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9792182404769709" speed="10">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\irlan.gomes\Documents\font\uea\pugcatch\Assets\pug (1).png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\irlan.gomes\Documents\font\uea\pugcatch\Assets\pug (2).png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\irlan.gomes\Documents\font\uea\pugcatch\Assets\pug.png" />
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="grass" sid="8463433725198543">
+        <object-type name="grama" sid="8463433725198543">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4538128497345363" speed="5">
-                    <frame duration="1" hotspotX="0.503623" hotspotY="0.5" original-source="C:\Users\simon\Downloads\grass).jpg" />
+                    <frame duration="1" hotspotX="0.503704" hotspotY="0.5" original-source="C:\Users\irlan.gomes\Documents\font\uea\pugcatch\Assets\BG.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -137,7 +122,7 @@
             <plugin id="TiledBg" />
             <texture original-source="C:\Users\irlan.gomes\Documents\font\uea\pugcatch\Assets\BG-pagina-inicial.png" />
         </object-type>
-        <object-type name="Sprite" sid="475902381582205">
+        <object-type name="bgprincipal" sid="475902381582205">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="757983414849445" speed="5">
@@ -145,7 +130,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite2" sid="643336453767705">
+        <object-type name="botaoiniciar" sid="643336453767705">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="957454117555540" speed="5">
@@ -154,7 +139,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite3" sid="721672913129304">
+        <object-type name="logo" sid="721672913129304">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="335466558197613" speed="5">
@@ -172,6 +157,110 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Mouse" sid="822570530826823">
+            <plugin id="Mouse" />
+        </object-type>
+        <object-type name="casa" sid="993229871128730">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="544028871065569" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\irlan.gomes\Documents\font\uea\pugcatch\Assets\casa_temp.png">
+                        <collision-poly>
+                            <point x="0.229462" y="0.225" />
+                            <point x="0.5" y="0.00555556" />
+                            <point x="0.769122" y="0.226389" />
+                            <point x="0.985836" y="0.5" />
+                            <point x="0.890935" y="0.893056" />
+                            <point x="0.5" y="0.944444" />
+                            <point x="0.103399" y="0.898611" />
+                            <point x="0.00566572" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="hidrante" sid="818782563450806">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="343657091279317" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\irlan.gomes\Documents\font\uea\pugcatch\Assets\pug.png">
+                        <collision-poly>
+                            <point x="0.280556" y="0.140278" />
+                            <point x="0.5" y="0" />
+                            <point x="0.697222" y="0.151389" />
+                            <point x="0.952778" y="0.5" />
+                            <point x="0.725" y="0.8625" />
+                            <point x="0.5" y="0.998611" />
+                            <point x="0.222222" y="0.888889" />
+                            <point x="0.141667" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="rua" sid="674211995238667">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="731787713242117" speed="5">
+                    <frame duration="1" hotspotX="-0.00997506" hotspotY="0.266667" original-source="C:\Users\irlan.gomes\Documents\font\uea\pugcatch\Assets\rua_temp.png">
+                        <image-point name="Imagepoint 1" x="1.00998" y="0.25641" />
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="carro" sid="503967914715722">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="194589012263631">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="323063688752735" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\irlan.gomes\Documents\font\uea\pugcatch\Assets\carro_temp.png">
+                        <collision-poly>
+                            <point x="0.056" y="0.112903" />
+                            <point x="0.5" y="0.0806452" />
+                            <point x="0.932" y="0.137097" />
+                            <point x="1" y="0.5" />
+                            <point x="0.932" y="0.862903" />
+                            <point x="0.5" y="0.919355" />
+                            <point x="0.056" y="0.887097" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="correio" sid="661352036318187">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="937017250500627" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\irlan.gomes\Documents\font\uea\pugcatch\Assets\correio.png">
+                        <collision-poly>
+                            <point x="0.440329" y="0.440329" />
+                            <point x="0.5" y="0.0987654" />
+                            <point x="0.489712" y="0.510288" />
+                            <point x="0.489712" y="0.489712" />
+                            <point x="0.5" y="0.952675" />
+                            <point x="0.444444" y="0.555556" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="cerca" sid="402998889477271">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="134059449910780" speed="5">
+                    <frame duration="1" hotspotX="0.502304" hotspotY="0.502825" original-source="C:\Users\irlan.gomes\Documents\font\uea\pugcatch\Assets\cerca.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="SpriteFont2" sid="814146859776660">
+            <plugin id="Spritefont2" />
+            <texture />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -179,8 +268,8 @@
         <layout>TelaPrincipal.xml</layout>
     </layout-folder>
     <event-folder>
-        <event-sheet>Event sheet 1.xml</event-sheet>
-        <event-sheet>Event sheet 2.xml</event-sheet>
+        <event-sheet>Jogo.xml</event-sheet>
+        <event-sheet>TelaPrincipal.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="ScirraArcade" uid="3" />
@@ -199,12 +288,13 @@
                 <roll-off-factor>1</roll-off-factor>
             </properties>
         </global-instance>
+        <global-instance type="Mouse" uid="10" />
     </global-instances>
     <sounds-folder>
-        <file name="SquareMotif1.m4a" />
-        <file name="SquareMotif1.ogg" />
-        <file name="Oops3.m4a" />
-        <file name="Oops3.ogg" />
+        <file name="game-over.ogg" />
+        <file name="musica-tema-old.ogg" />
+        <file name="latido.ogg" />
+        <file name="8bit Dogsong - Undertale.ogg" />
     </sounds-folder>
     <music-folder />
     <files-folder>
