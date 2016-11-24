@@ -169,10 +169,11 @@
     <families />
     <layout-folder>
         <layout>Phase1.xml</layout>
+        <layout>Tela Principal.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Event sheet 1.xml</event-sheet>
-        <event-sheet>Event sheet 2.xml</event-sheet>
+        <event-sheet>Event sheet 3.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="6" />
