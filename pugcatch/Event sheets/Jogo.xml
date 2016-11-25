@@ -370,15 +370,15 @@
         <event-block sid="346778684931452">
             <conditions>
                 <condition id="-6" name="Every X seconds" sid="825622815380423" type="System">
-                    <param id="0" name="Interval (seconds)">20</param>
+                    <param id="0" name="Interval (seconds)">10</param>
                 </condition>
             </conditions>
             <actions>
                 <action id="-3" name="Create object" sid="878241608550652" type="System">
                     <param id="0" name="Object to create">carro</param>
                     <param id="1" name="Layer">0</param>
-                    <param id="2" name="X">rua.X</param>
-                    <param id="3" name="Y">rua.Y</param>
+                    <param id="2" name="X">610</param>
+                    <param id="3" name="Y">-55</param>
                 </action>
             </actions>
         </event-block>

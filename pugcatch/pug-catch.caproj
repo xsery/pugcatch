@@ -81,19 +81,41 @@
             </instance-variables>
             <animation-folder>
                 <animation framecount="3" loop="1" name="Default" pingpong="1" repeatcount="0" repeatto="5" sid="119275230448001" speed="15">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.504854" original-source="C:\Users\irlan.gomes\Documents\font\uea\pugcatch\Assets\PUG Mãe\Pug_03.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.504854" original-source="C:\Users\irlan.gomes\Documents\font\uea\pugcatch\Assets\PUG Mãe\Pug_06.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.504854" original-source="C:\Users\irlan.gomes\Documents\font\uea\pugcatch\Assets\PUG Mãe\Pug_08.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\irlan.gomes\Documents\font\uea\pugcatch\Assets\oficiais\Layou 2\cauda\cauda_03.png">
+                        <collision-poly>
+                            <point x="0.25" y="0.266667" />
+                            <point x="0.5" y="0.166667" />
+                            <point x="0.75" y="0.266667" />
+                            <point x="0.8125" y="0.5" />
+                            <point x="0.75" y="0.733333" />
+                            <point x="0.5" y="0.833333" />
+                            <point x="0.25" y="0.733333" />
+                            <point x="0.1875" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\irlan.gomes\Documents\font\uea\pugcatch\Assets\oficiais\Layou 2\cauda\cauda_03 - Copia (2).png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\irlan.gomes\Documents\font\uea\pugcatch\Assets\oficiais\Layou 2\cauda\cauda_03 - Copia.png" />
                 </animation>
             </animation-folder>
         </object-type>
         <object-type name="filhote" sid="285224910631804">
             <plugin id="Sprite" />
             <animation-folder>
-                <animation framecount="3" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9792182404769709" speed="10">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\irlan.gomes\Documents\font\uea\pugcatch\Assets\pug (1).png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\irlan.gomes\Documents\font\uea\pugcatch\Assets\pug (2).png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\irlan.gomes\Documents\font\uea\pugcatch\Assets\pug.png" />
+                <animation framecount="4" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9792182404769709" speed="10">
+                    <frame duration="1" hotspotX="0.503546" hotspotY="0.504348" original-source="C:\Users\irlan.gomes\Documents\font\uea\pugcatch\Assets\oficiais\Layou 2\pug-filho_03.png">
+                        <collision-poly>
+                            <point x="0.0921986" y="0.113043" />
+                            <point x="0.496454" y="0.208696" />
+                            <point x="0.815603" y="0.226087" />
+                            <point x="0.858156" y="0.495652" />
+                            <point x="0.865248" y="0.834783" />
+                            <point x="0.191489" y="0.765217" />
+                            <point x="0.141844" y="0.495652" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.503546" hotspotY="0.504348" original-source="C:\Users\irlan.gomes\Documents\font\uea\pugcatch\Assets\oficiais\Layou 2\pug-filho_03 - Copia (2).png" />
+                    <frame duration="1" hotspotX="0.503546" hotspotY="0.504348" original-source="C:\Users\irlan.gomes\Documents\font\uea\pugcatch\Assets\oficiais\Layou 2\pug-filho_03 - Copia.png" />
+                    <frame duration="1" hotspotX="0.503546" hotspotY="0.504348" original-source="C:\Users\irlan.gomes\Documents\font\uea\pugcatch\Assets\oficiais\Layou 2\pug-filho_03.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -101,7 +123,14 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4538128497345363" speed="5">
-                    <frame duration="1" hotspotX="0.503704" hotspotY="0.5" original-source="C:\Users\irlan.gomes\Documents\font\uea\pugcatch\Assets\BG.png" />
+                    <frame duration="1" hotspotX="0.503704" hotspotY="0.5" original-source="C:\Users\irlan.gomes\Documents\font\uea\pugcatch\Assets\oficiais\Layou 2\BG.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.999074" y="0.00138889" />
+                            <point x="0.999074" y="0.998611" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
@@ -164,7 +193,7 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="544028871065569" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\irlan.gomes\Documents\font\uea\pugcatch\Assets\casa_temp.png">
+                    <frame duration="1" hotspotX="0.502242" hotspotY="0.503106" original-source="C:\Users\irlan.gomes\Documents\font\uea\pugcatch\Assets\oficiais\Layou 2\casas\casa_01.png">
                         <collision-poly>
                             <point x="0.229462" y="0.225" />
                             <point x="0.5" y="0.00555556" />
@@ -183,7 +212,7 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="343657091279317" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\irlan.gomes\Documents\font\uea\pugcatch\Assets\pug.png">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\irlan.gomes\Documents\font\uea\pugcatch\Assets\oficiais\Layou 2\casas\casa_02.png">
                         <collision-poly>
                             <point x="0.280556" y="0.140278" />
                             <point x="0.5" y="0" />
@@ -198,22 +227,6 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="rua" sid="674211995238667">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="731787713242117" speed="5">
-                    <frame duration="1" hotspotX="0.733333" hotspotY="-0.00997506" original-source="C:\Users\irlan.gomes\Documents\font\uea\pugcatch\Assets\rua_temp.png">
-                        <image-point name="Imagepoint 1" x="0.74359" y="1.00998" />
-                        <collision-poly>
-                            <point x="1" y="0" />
-                            <point x="1" y="1" />
-                            <point x="0" y="1" />
-                            <point x="0" y="0" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
         <object-type name="carro" sid="503967914715722">
             <plugin id="Sprite" />
             <behaviors>
@@ -223,7 +236,7 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="323063688752735" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\irlan.gomes\Documents\font\uea\pugcatch\Assets\carro_temp.png">
+                    <frame duration="1" hotspotX="0.512821" hotspotY="0.5" original-source="C:\Users\irlan.gomes\Documents\font\uea\pugcatch\Assets\oficiais\Layou 2\carro\carro_03.png">
                         <collision-poly>
                             <point x="0.887097" y="0.056" />
                             <point x="0.919355" y="0.5" />
@@ -242,7 +255,7 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="937017250500627" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\irlan.gomes\Documents\font\uea\pugcatch\Assets\correio.png">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.502538" original-source="C:\Users\irlan.gomes\Documents\font\uea\pugcatch\Assets\oficiais\Layou 2\casas\casa_03.png">
                         <collision-poly>
                             <point x="0.440329" y="0.440329" />
                             <point x="0.5" y="0.0987654" />
@@ -259,7 +272,17 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="134059449910780" speed="5">
-                    <frame duration="1" hotspotX="0.502304" hotspotY="0.502825" original-source="C:\Users\irlan.gomes\Documents\font\uea\pugcatch\Assets\cerca.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.494949" original-source="C:\Users\irlan.gomes\Documents\font\uea\pugcatch\Assets\oficiais\Layou 2\cercas\cercas_02.png">
+                        <collision-poly>
+                            <point x="0.877358" y="0.868687" />
+                            <point x="0.122642" y="0.868687" />
+                            <point x="0.179245" y="0.505051" />
+                            <point x="0.141509" y="0.151515" />
+                            <point x="0.5" y="0.777778" />
+                            <point x="0.386792" y="0.656566" />
+                            <point x="0.264151" y="0.505051" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
