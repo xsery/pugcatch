@@ -270,8 +270,8 @@
     </object-folder>
     <families />
     <layout-folder>
-        <layout>Jogo.xml</layout>
         <layout>TelaPrincipal.xml</layout>
+        <layout>Jogo.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Jogo.xml</event-sheet>

@@ -11,8 +11,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </configurations>
     <open-tabs>
         <layout order="2">Jogo</layout>
-        <layout order="0">TelaPrincipal</layout>
-        <event-sheet active="1" order="3">Jogo</event-sheet>
+        <layout active="1" order="0">TelaPrincipal</layout>
+        <event-sheet order="3">Jogo</event-sheet>
         <event-sheet order="1">TelaPrincipal</event-sheet>
     </open-tabs>
     <properties>
@@ -25,7 +25,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <folders-expanded>
         <folder expanded="1" path="object-folder/" />
         <folder expanded="1" path="layout-folder/" />
-        <folder expanded="0" path="event-folder/" />
+        <folder expanded="1" path="event-folder/" />
         <folder expanded="0" path="file-folder/" />
         <folder expanded="1" path="sound-folder/" />
         <folder expanded="1" path="music-folder/" />
