@@ -10,10 +10,13 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout order="1">TelaPrincipal</layout>
-        <layout active="1" order="3">Jogo</layout>
-        <event-sheet order="2">TelaPrincipal</event-sheet>
-        <event-sheet order="4">Jogo</event-sheet>
+        <layout order="7">Main</layout>
+        <layout order="9">Singleplayer</layout>
+        <layout order="11">Multiplayer</layout>
+        <layout order="13">Instructions</layout>
+        <event-sheet order="8">Main</event-sheet>
+        <event-sheet active="1" order="10">Singleplayer</event-sheet>
+        <event-sheet order="14">Multiplayer</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -30,18 +33,24 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="sound-folder/" />
         <folder expanded="1" path="music-folder/" />
         <folder expanded="1" path="file-folder/Icons/" />
-        <folder expanded="1" path="animation-folder/cabeca/" />
-        <folder expanded="1" path="animation-folder/corpo/" />
-        <folder expanded="1" path="animation-folder/filhote/" />
-        <folder expanded="1" path="animation-folder/grama/" />
+        <folder expanded="1" path="animation-folder/player1/" />
+        <folder expanded="1" path="animation-folder/bodytail/" />
+        <folder expanded="1" path="animation-folder/puppy/" />
+        <folder expanded="1" path="animation-folder/grasp/" />
         <folder expanded="1" path="animation-folder/bgprincipal/" />
-        <folder expanded="1" path="animation-folder/botaoiniciar/" />
+        <folder expanded="1" path="animation-folder/singleplayer/" />
         <folder expanded="1" path="animation-folder/logo/" />
-        <folder expanded="1" path="animation-folder/casa/" />
-        <folder expanded="1" path="animation-folder/hidrante/" />
-        <folder expanded="1" path="animation-folder/carro/" />
-        <folder expanded="1" path="animation-folder/correio/" />
-        <folder expanded="1" path="animation-folder/cerca/" />
-        <folder expanded="1" path="animation-folder/Delegacia/" />
+        <folder expanded="1" path="animation-folder/house/" />
+        <folder expanded="1" path="animation-folder/hydrante/" />
+        <folder expanded="1" path="animation-folder/car/" />
+        <folder expanded="1" path="animation-folder/postoffice/" />
+        <folder expanded="1" path="animation-folder/fence/" />
+        <folder expanded="1" path="animation-folder/policedepartment/" />
+        <folder expanded="1" path="animation-folder/instrucations/" />
+        <folder expanded="1" path="animation-folder/multiplayer/" />
+        <folder expanded="1" path="animation-folder/graspbg/" />
+        <folder expanded="1" path="animation-folder/player2/" />
+        <folder expanded="1" path="animation-folder/bodytailp1/" />
+        <folder expanded="1" path="animation-folder/bodytail2/" />
     </folders-expanded>
 </c2uistate>

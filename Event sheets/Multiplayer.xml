@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Multiplayer</name>
+    <events>
+        <variable constant="0" name="ScoreP1" sid="588340679078261" static="0" type="number">0</variable>
+        <variable constant="0" name="ScoreP2" sid="722254393009617" static="0" type="number">0</variable>
+        <variable constant="0" name="StartP1" sid="775169385797139" static="0" type="number">0</variable>
+        <variable constant="0" name="StartP2" sid="613635837736488" static="0" type="number">0</variable>
+        <variable constant="0" name="MoveP2" sid="465206114318888" static="0" type="number">0</variable>
+        <variable constant="0" name="MoveP1" sid="697745250512327" static="0" type="number">0</variable>
+        <variable constant="0" name="GrowthP1" sid="544203744940960" static="0" type="number">0</variable>
+        <variable constant="0" name="GrowthP2" sid="317728289101938" static="0" type="number">0</variable>
+        <event-group description="" sid="629339907935332" title="Player 1">
+            <sub-events>
+                <event-block sid="151090035916811">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="350610154319333" type="Keyboard">
+                            <param id="0" name="Key">87 (W)</param>
+                        </condition>
+                        <condition id="2" name="Key is down" sid="886386398280592" type="Keyboard">
+                            <param id="0" name="Key">65 (A)</param>
+                        </condition>
+                        <condition id="2" name="Key is down" sid="502297802808376" type="Keyboard">
+                            <param id="0" name="Key">83 (S)</param>
+                        </condition>
+                        <condition id="2" name="Key is down" sid="515478060523258" type="Keyboard">
+                            <param id="0" name="Key">68 (D)</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="743607592789962" title="Player 2" />
+        <event-block sid="122597332920419">
+            <conditions>
+                <condition id="2" name="Key is down" sid="381587160208461" type="Keyboard">
+                    <param id="0" name="Key">38 (Up arrow)</param>
+                </condition>
+                <condition id="2" name="Key is down" sid="772436361745305" type="Keyboard">
+                    <param id="0" name="Key">37 (Left arrow)</param>
+                </condition>
+                <condition id="2" name="Key is down" sid="608770282770639" type="Keyboard">
+                    <param id="0" name="Key">39 (Right arrow)</param>
+                </condition>
+                <condition id="2" name="Key is down" sid="776018588007764" type="Keyboard">
+                    <param id="0" name="Key">40 (Down arrow)</param>
+                </condition>
+            </conditions>
+            <actions />
+        </event-block>
+        <event-group description="" sid="679928155622897" title="Player1 x Player2 Colision" />
+    </events>
+</c2eventsheet>

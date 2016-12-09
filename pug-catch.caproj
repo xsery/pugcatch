@@ -51,7 +51,7 @@
         <prop name="Use high-DPI display">Yes</prop>
     </configuration-settings>
     <object-folder>
-        <object-type name="cabeca" sid="1469550750304854">
+        <object-type name="player1" sid="1469550750304854">
             <plugin id="Sprite" />
             <behaviors>
                 <behavior-type name="8Direction" sid="9819487546771331">
@@ -74,7 +74,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="corpo" sid="9039498961996566">
+        <object-type name="bodytail" sid="9039498961996566">
             <plugin id="Sprite" />
             <instance-variables>
                 <instance-variable name="Variable1" sid="2771274597933873" type="number" />
@@ -98,7 +98,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="filhote" sid="285224910631804">
+        <object-type name="puppy" sid="285224910631804">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="3" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9792182404769709" speed="3">
@@ -108,7 +108,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="grama" sid="8463433725198543">
+        <object-type name="grasp" sid="8463433725198543">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4538128497345363" speed="5">
@@ -148,7 +148,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="botaoiniciar" sid="643336453767705">
+        <object-type name="singleplayer" sid="643336453767705">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="957454117555540" speed="5">
@@ -178,7 +178,7 @@
         <object-type name="Mouse" sid="822570530826823">
             <plugin id="Mouse" />
         </object-type>
-        <object-type name="casa" sid="993229871128730">
+        <object-type name="house" sid="993229871128730">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="544028871065569" speed="5">
@@ -197,7 +197,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="hidrante" sid="818782563450806">
+        <object-type name="hydrante" sid="818782563450806">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="343657091279317" speed="5">
@@ -216,7 +216,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="carro" sid="503967914715722">
+        <object-type name="car" sid="503967914715722">
             <plugin id="Sprite" />
             <behaviors>
                 <behavior-type name="Bullet" sid="194589012263631">
@@ -240,7 +240,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="correio" sid="661352036318187">
+        <object-type name="postoffice" sid="661352036318187">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="937017250500627" speed="5">
@@ -257,7 +257,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="cerca" sid="402998889477271">
+        <object-type name="fence" sid="402998889477271">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="134059449910780" speed="5">
@@ -279,7 +279,7 @@
             <plugin id="Spritefont2" />
             <texture />
         </object-type>
-        <object-type name="Delegacia" sid="583466774844683">
+        <object-type name="policedepartment" sid="583466774844683">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="638631899067637" speed="5">
@@ -298,15 +298,101 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="instrucations" sid="104593612338922">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="122997232903441" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Fran Maia\Desktop\Layout-3---Banner.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="multiplayer" sid="852700385014760">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="168003887585241" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Fran Maia\Desktop\download.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="graspbg" sid="847354147225328">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="188825205567247" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Projects\Pugcatch\Animations\grama\Default\000.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.999074" y="0.00138889" />
+                            <point x="0.999074" y="0.998611" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="player2" sid="579561469746260">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="8Direction" sid="442660321888070">
+                    <behavior id="EightDir" />
+                </behavior-type>
+                <behavior-type name="Wrap" sid="316497781326091">
+                    <behavior id="wrap" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="323000708368833" speed="5">
+                    <frame duration="1" hotspotX="0.464844" hotspotY="0.509259" original-source="C:\Users\Fran Maia\Desktop\dog.png">
+                        <collision-poly>
+                            <point x="0.0898438" y="0.0648148" />
+                            <point x="0.464844" y="0.0648148" />
+                            <point x="0.652344" y="0.287037" />
+                            <point x="0.863281" y="0.509259" />
+                            <point x="0.789063" y="0.893519" />
+                            <point x="0.464844" y="0.842593" />
+                            <point x="0.09375" y="0.949074" />
+                            <point x="0.0078125" y="0.509259" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="bodytailp1" sid="178649397925012">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="1" name="btp1" pingpong="0" repeatcount="1" repeatto="0" sid="351003592911156" speed="7">
+                    <frame duration="1" hotspotX="0.916667" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.916667" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="bodytail2" sid="361312952389410">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="btp2" pingpong="0" repeatcount="1" repeatto="0" sid="140337904040683" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.504854">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
-        <layout>TelaPrincipal.xml</layout>
-        <layout>Jogo.xml</layout>
+        <layout>Main.xml</layout>
+        <layout>Instructions.xml</layout>
+        <layout>Singleplayer.xml</layout>
+        <layout>Multiplayer.xml</layout>
     </layout-folder>
     <event-folder>
-        <event-sheet>Jogo.xml</event-sheet>
-        <event-sheet>TelaPrincipal.xml</event-sheet>
+        <event-sheet>Singleplayer.xml</event-sheet>
+        <event-sheet>Main.xml</event-sheet>
+        <event-sheet>Multiplayer.xml</event-sheet>
+        <event-sheet>Instructions.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="ScirraArcade" uid="3" />
