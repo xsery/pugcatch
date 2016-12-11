@@ -11,45 +11,110 @@
         <variable constant="0" name="MoveP1" sid="697745250512327" static="0" type="number">0</variable>
         <variable constant="0" name="GrowthP1" sid="544203744940960" static="0" type="number">0</variable>
         <variable constant="0" name="GrowthP2" sid="317728289101938" static="0" type="number">0</variable>
-        <event-group description="" sid="629339907935332" title="Player 1">
+        <event-group description="" sid="743607592789962" title="Player 2">
             <sub-events>
-                <event-block sid="151090035916811">
+                <event-block sid="621357798801539">
                     <conditions>
-                        <condition id="2" name="Key is down" sid="350610154319333" type="Keyboard">
-                            <param id="0" name="Key">87 (W)</param>
-                        </condition>
-                        <condition id="2" name="Key is down" sid="886386398280592" type="Keyboard">
-                            <param id="0" name="Key">65 (A)</param>
-                        </condition>
-                        <condition id="2" name="Key is down" sid="502297802808376" type="Keyboard">
-                            <param id="0" name="Key">83 (S)</param>
-                        </condition>
-                        <condition id="2" name="Key is down" sid="515478060523258" type="Keyboard">
-                            <param id="0" name="Key">68 (D)</param>
+                        <condition id="2" name="Key is down" sid="599968495099306" type="Keyboard">
+                            <param id="0" name="Key">38 (Up arrow)</param>
                         </condition>
                     </conditions>
-                    <actions />
+                    <actions>
+                        <action behavior="8Direction" id="7" name="Simulate control" sid="376552077477653" type="player2">
+                            <param id="0" name="Control">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="583817070476545">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="168188896284121" type="Keyboard">
+                            <param id="0" name="Key">37 (Left arrow)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="8Direction" id="7" name="Simulate control" sid="721337132012295" type="player2">
+                            <param id="0" name="Control">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="322429057145291">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="617364435654875" type="Keyboard">
+                            <param id="0" name="Key">39 (Right arrow)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="8Direction" id="7" name="Simulate control" sid="825506810735706" type="player2">
+                            <param id="0" name="Control">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="988971959246365">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="313156078032859" type="Keyboard">
+                            <param id="0" name="Key">40 (Down arrow)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="8Direction" id="7" name="Simulate control" sid="271096815012320" type="player2">
+                            <param id="0" name="Control">3</param>
+                        </action>
+                    </actions>
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group description="" sid="743607592789962" title="Player 2" />
-        <event-block sid="122597332920419">
-            <conditions>
-                <condition id="2" name="Key is down" sid="381587160208461" type="Keyboard">
-                    <param id="0" name="Key">38 (Up arrow)</param>
-                </condition>
-                <condition id="2" name="Key is down" sid="772436361745305" type="Keyboard">
-                    <param id="0" name="Key">37 (Left arrow)</param>
-                </condition>
-                <condition id="2" name="Key is down" sid="608770282770639" type="Keyboard">
-                    <param id="0" name="Key">39 (Right arrow)</param>
-                </condition>
-                <condition id="2" name="Key is down" sid="776018588007764" type="Keyboard">
-                    <param id="0" name="Key">40 (Down arrow)</param>
-                </condition>
-            </conditions>
-            <actions />
-        </event-block>
-        <event-group description="" sid="679928155622897" title="Player1 x Player2 Colision" />
+        <event-group description="" sid="395235545112143" title="Player 3">
+            <sub-events>
+                <event-block sid="666236490322692">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="468247439582056" type="Keyboard">
+                            <param id="0" name="Key">87 (W)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="8Direction" id="7" name="Simulate control" sid="405177849993526" type="player1">
+                            <param id="0" name="Control">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="957744891772660">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="693013113274590" type="Keyboard">
+                            <param id="0" name="Key">65 (A)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="8Direction" id="7" name="Simulate control" sid="238777891677591" type="player1">
+                            <param id="0" name="Control">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="782102610218297">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="318503386400029" type="Keyboard">
+                            <param id="0" name="Key">68 (D)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="8Direction" id="7" name="Simulate control" sid="633215059550706" type="player1">
+                            <param id="0" name="Control">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="649768430920111">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="806852799281177" type="Keyboard">
+                            <param id="0" name="Key">83 (S)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="8Direction" id="7" name="Simulate control" sid="439745975861570" type="player1">
+                            <param id="0" name="Control">3</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-group description="" sid="786581794457470" title="Player1 x Player2 Colision2" />
+            </sub-events>
+        </event-group>
     </events>
 </c2eventsheet>
