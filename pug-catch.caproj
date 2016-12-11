@@ -388,25 +388,6 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="housem" sid="520515161710208">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="479947549889671" speed="5">
-                    <frame duration="1" hotspotX="0.509091" hotspotY="0.525641" original-source="C:\Users\xsery\Projects\Pugcatch\export\images\casa-sheet0.png">
-                        <collision-poly>
-                            <point x="0.145455" y="0.211538" />
-                            <point x="0.504545" y="0.115385" />
-                            <point x="0.686364" y="0.467949" />
-                            <point x="0.690909" y="0.519231" />
-                            <point x="0.904545" y="0.884615" />
-                            <point x="0.504545" y="0.839744" />
-                            <point x="0.127273" y="0.858974" />
-                            <point x="0.118182" y="0.519231" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
     </object-folder>
     <families />
     <layout-folder>
