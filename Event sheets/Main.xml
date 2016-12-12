@@ -3,6 +3,19 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Main</name>
     <events>
+        <event-block sid="634956983722350">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="599925741034200" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="275721059403949" type="Audio">
+                    <param id="0" name="Audio file">8bit Dogsong - Undertale</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
         <event-group description="" sid="929482938028312" title="Main" />
         <event-block sid="188271897336689">
             <conditions>
@@ -38,16 +51,17 @@
                 </action>
             </actions>
         </event-block>
-        <event-block sid="634956983722350">
+        <event-block sid="286851265983603">
             <conditions>
-                <condition id="-2" name="On start of layout" sid="599925741034200" type="System" />
+                <condition id="6" name="On object clicked" sid="918730276263687" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">help</param>
+                </condition>
             </conditions>
             <actions>
-                <action id="0" name="Play" sid="275721059403949" type="Audio">
-                    <param id="0" name="Audio file">8bit Dogsong - Undertale</param>
-                    <param id="2" name="Loop">0</param>
-                    <param id="3" name="Volume">0</param>
-                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                <action id="-2" name="Go to layout" sid="412684307120054" type="System">
+                    <param id="0" name="Layout">Instructions</param>
                 </action>
             </actions>
         </event-block>

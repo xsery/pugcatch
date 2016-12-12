@@ -16,7 +16,6 @@
         <plugin author="Scirra" id="ScirraArcadeV4" version="1">Scirra Arcade</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Spritefont2" version="1">Sprite font</plugin>
-        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
@@ -135,10 +134,6 @@
         </object-type>
         <object-type name="Audio" sid="7112417201386639">
             <plugin id="Audio" />
-        </object-type>
-        <object-type name="TiledBackground" sid="487003914369582">
-            <plugin id="TiledBg" />
-            <texture original-source="C:\Users\irlan.gomes\Documents\font\uea\pugcatch\Assets\BG-pagina-inicial.png" />
         </object-type>
         <object-type name="bgprincipal" sid="475902381582205">
             <plugin id="Sprite" />
@@ -380,11 +375,11 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite" sid="154719699119028">
+        <object-type name="help" sid="112858795543134">
             <plugin id="Sprite" />
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="472154542545306" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="810772598003749" speed="5">
+                    <frame duration="1" hotspotX="0.502203" hotspotY="0.502203" original-source="C:\Users\xsery\Desktop\interrog.png" />
                 </animation>
             </animation-folder>
         </object-type>
