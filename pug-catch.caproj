@@ -23,6 +23,7 @@
         <behavior author="Scirra" id="wrap" version="1">Wrap</behavior>
     </used-behaviors>
     <used-effects>
+        <effect author="Scirra" id="blurvertical">Blur Vertical</effect>
         <effect author="Scirra" id="pixellate">Pixellate</effect>
     </used-effects>
     <configurations>
@@ -124,7 +125,7 @@
         </object-type>
         <object-type name="SpriteFont" sid="5567752350371045">
             <plugin id="Spritefont2" />
-            <texture />
+            <texture original-source="F:\Projects\Pugcatch\export\images\spritefont.png" />
         </object-type>
         <object-type name="ScirraArcade" sid="4841506703728644">
             <plugin id="ScirraArcadeV4" />
@@ -147,7 +148,7 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="957454117555540" speed="5">
-                    <frame duration="1" hotspotX="0.501326" hotspotY="0.5" original-source="C:\Users\irlan.gomes\Documents\font\uea\pugcatch\Assets\PUG Mãe\play_03.png" />
+                    <frame duration="1" hotspotX="0.516949" hotspotY="0.554795" original-source="C:\Users\irlan.gomes\Documents\font\uea\pugcatch\Assets\PUG Mãe\play_03.png" />
                     <frame duration="1" hotspotX="0.501326" hotspotY="0.5" original-source="C:\Users\irlan.gomes\Documents\font\uea\pugcatch\Assets\PUG Mãe\play-selecionado_03.png" />
                 </animation>
             </animation-folder>
@@ -177,16 +178,16 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="544028871065569" speed="5">
-                    <frame duration="1" hotspotX="0.502242" hotspotY="0.503106" original-source="C:\Users\irlan.gomes\Documents\font\uea\pugcatch\Assets\oficiais\Layou 2\casas\casa_01.png">
+                    <frame duration="1" hotspotX="0.509091" hotspotY="0.525641" original-source="C:\Users\irlan.gomes\Documents\font\uea\pugcatch\Assets\oficiais\Layou 2\casas\casa_01.png">
                         <collision-poly>
-                            <point x="0.229462" y="0.225" />
-                            <point x="0.5" y="0.00555556" />
-                            <point x="0.769122" y="0.226389" />
-                            <point x="0.985836" y="0.5" />
-                            <point x="0.890935" y="0.893056" />
-                            <point x="0.5" y="0.944444" />
-                            <point x="0.103399" y="0.898611" />
-                            <point x="0.00566572" y="0.5" />
+                            <point x="0.232591" y="0.238622" />
+                            <point x="0.506818" y="0.0121439" />
+                            <point x="0.77961" y="0.240055" />
+                            <point x="0.999279" y="0.522436" />
+                            <point x="0.903084" y="0.92809" />
+                            <point x="0.506818" y="0.981125" />
+                            <point x="0.104809" y="0.933823" />
+                            <point x="0.00574298" y="0.522436" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -196,16 +197,16 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="343657091279317" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\irlan.gomes\Documents\font\uea\pugcatch\Assets\oficiais\Layou 2\casas\casa_02.png">
+                    <frame duration="1" hotspotX="0.504732" hotspotY="0.494898" original-source="C:\Users\irlan.gomes\Documents\font\uea\pugcatch\Assets\oficiais\Layou 2\casas\casa_02.png">
                         <collision-poly>
-                            <point x="0.280556" y="0.140278" />
-                            <point x="0.5" y="0" />
-                            <point x="0.697222" y="0.151389" />
-                            <point x="0.952778" y="0.5" />
-                            <point x="0.725" y="0.8625" />
-                            <point x="0.5" y="0.998611" />
-                            <point x="0.222222" y="0.888889" />
-                            <point x="0.141667" y="0.5" />
+                            <point x="0.284596" y="0.135176" />
+                            <point x="0.504732" y="0" />
+                            <point x="0.702576" y="0.146287" />
+                            <point x="0.958938" y="0.494898" />
+                            <point x="0.730442" y="0.857398" />
+                            <point x="0.504732" y="0.993509" />
+                            <point x="0.226078" y="0.883787" />
+                            <point x="0.145268" y="0.494898" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -219,17 +220,17 @@
                 </behavior-type>
             </behaviors>
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="323063688752735" speed="5">
-                    <frame duration="1" hotspotX="0.512821" hotspotY="0.5" original-source="C:\Users\irlan.gomes\Documents\font\uea\pugcatch\Assets\oficiais\Layou 2\carro\carro_03.png">
+                <animation framecount="1" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="323063688752735" speed="5">
+                    <frame duration="1" hotspotX="0.542857" hotspotY="0.510204" original-source="C:\Users\irlan.gomes\Documents\font\uea\pugcatch\Assets\oficiais\Layou 2\carro\carro_03.png">
                         <collision-poly>
-                            <point x="0.887097" y="0.056" />
-                            <point x="0.919355" y="0.5" />
-                            <point x="0.862903" y="0.932" />
-                            <point x="0.5" y="1" />
-                            <point x="0.137097" y="0.932" />
-                            <point x="0.0806451" y="0.5" />
-                            <point x="0.112903" y="0.056" />
-                            <point x="0.5" y="0" />
+                            <point x="0.959908" y="0" />
+                            <point x="0.995853" y="0.510204" />
+                            <point x="0.932949" y="1" />
+                            <point x="0.528571" y="1" />
+                            <point x="0.124194" y="1" />
+                            <point x="0.0612902" y="0.510204" />
+                            <point x="0.0972348" y="0" />
+                            <point x="0.528571" y="0" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -239,14 +240,14 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="937017250500627" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.502538" original-source="C:\Users\irlan.gomes\Documents\font\uea\pugcatch\Assets\oficiais\Layou 2\casas\casa_03.png">
+                    <frame duration="1" hotspotX="0.508361" hotspotY="0.47619" original-source="C:\Users\irlan.gomes\Documents\font\uea\pugcatch\Assets\oficiais\Layou 2\casas\casa_03.png">
                         <collision-poly>
-                            <point x="0.440329" y="0.440329" />
-                            <point x="0.5" y="0.0987654" />
-                            <point x="0.489712" y="0.510288" />
-                            <point x="0.489712" y="0.489712" />
-                            <point x="0.5" y="0.952675" />
-                            <point x="0.444444" y="0.555556" />
+                            <point x="0.446495" y="0.411348" />
+                            <point x="0.508361" y="0.0553269" />
+                            <point x="0.497695" y="0.484268" />
+                            <point x="0.497695" y="0.462822" />
+                            <point x="0.508361" y="0.945381" />
+                            <point x="0.450761" y="0.531453" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -270,24 +271,20 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="SpriteFont2" sid="814146859776660">
-            <plugin id="Spritefont2" />
-            <texture />
-        </object-type>
         <object-type name="policedepartment" sid="583466774844683">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="638631899067637" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.502618" original-source="C:\Users\irlan.gomes\Documents\font\uea\pugcatch\Assets\oficiais\Layou 2\casas\casa_05.png">
+                    <frame duration="1" hotspotX="0.491228" hotspotY="0.5" original-source="C:\Users\irlan.gomes\Documents\font\uea\pugcatch\Assets\oficiais\Layou 2\casas\casa_05.png">
                         <collision-poly>
-                            <point x="0.241379" y="0.366492" />
-                            <point x="0.5" y="0.0890052" />
-                            <point x="0.844828" y="0.235602" />
-                            <point x="0.865517" y="0.497382" />
-                            <point x="0.917241" y="0.874346" />
-                            <point x="0.5" y="0.884817" />
-                            <point x="0.162069" y="0.753927" />
-                            <point x="0.231034" y="0.497382" />
+                            <point x="0.22807" y="0.364583" />
+                            <point x="0.491228" y="0.0885416" />
+                            <point x="0.842106" y="0.234375" />
+                            <point x="0.863158" y="0.494791" />
+                            <point x="0.915789" y="0.869792" />
+                            <point x="0.491228" y="0.880209" />
+                            <point x="0.147368" y="0.75" />
+                            <point x="0.217543" y="0.494791" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -324,7 +321,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="player2" sid="579561469746260">
+        <object-type name="playertest" sid="579561469746260">
             <plugin id="Sprite" />
             <behaviors>
                 <behavior-type name="8Direction" sid="442660321888070">
@@ -380,6 +377,29 @@
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="810772598003749" speed="5">
                     <frame duration="1" hotspotX="0.502203" hotspotY="0.502203" original-source="C:\Users\xsery\Desktop\interrog.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="player2" sid="567494046302237">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="8Direction" sid="183764023394286">
+                    <behavior id="EightDir" />
+                </behavior-type>
+                <behavior-type name="Wrap" sid="105871800311432">
+                    <behavior id="wrap" />
+                </behavior-type>
+            </behaviors>
+            <effects>
+                <effect-type name="Pixellate">
+                    <effect id="pixellate" />
+                </effect-type>
+            </effects>
+            <animation-folder>
+                <animation framecount="3" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="175090380904642" speed="30">
+                    <frame duration="1" hotspotX="-0.0339806" hotspotY="0.504854" original-source="C:\Users\irlan.gomes\Documents\font\uea\pugcatch\Assets\PUG Mãe\Pug_03.png" />
+                    <frame duration="1" hotspotX="-0.0339806" hotspotY="0.504854" original-source="C:\Users\irlan.gomes\Documents\font\uea\pugcatch\Assets\PUG Mãe\Pug_06.png" />
+                    <frame duration="1" hotspotX="-0.0339806" hotspotY="0.504854" original-source="C:\Users\irlan.gomes\Documents\font\uea\pugcatch\Assets\PUG Mãe\Pug_08.png" />
                 </animation>
             </animation-folder>
         </object-type>

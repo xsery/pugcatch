@@ -10,19 +10,19 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout order="0">Main</layout>
-        <layout active="1" order="1">Singleplayer</layout>
-        <layout order="1">Multiplayer</layout>
-        <layout order="2">Instructions</layout>
-        <event-sheet order="5">Main</event-sheet>
-        <event-sheet order="0">Singleplayer</event-sheet>
-        <event-sheet order="2">Multiplayer</event-sheet>
-        <event-sheet order="6">Instructions</event-sheet>
+        <layout order="1">Main</layout>
+        <layout order="3">Singleplayer</layout>
+        <layout order="4">Multiplayer</layout>
+        <layout order="5">Instructions</layout>
+        <event-sheet order="2">Singleplayer</event-sheet>
+        <event-sheet active="1" order="6">Multiplayer</event-sheet>
+        <event-sheet order="7">Main</event-sheet>
+        <event-sheet order="8">Instructions</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
         <property expanded="1" name="Project settings" />
-        <property expanded="0" name="Window Size" />
+        <property expanded="1" name="Window Size" />
         <property expanded="1" name="Configuration Settings" />
     </properties>
     <families-expanded root="1" />
@@ -50,9 +50,10 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/instrucations/" />
         <folder expanded="1" path="animation-folder/multiplayer/" />
         <folder expanded="1" path="animation-folder/graspbg/" />
-        <folder expanded="1" path="animation-folder/player2/" />
+        <folder expanded="1" path="animation-folder/playertest/" />
         <folder expanded="1" path="animation-folder/bodytailp1/" />
         <folder expanded="1" path="animation-folder/bodytail2/" />
         <folder expanded="1" path="animation-folder/help/" />
+        <folder expanded="1" path="animation-folder/player2/" />
     </folders-expanded>
 </c2uistate>

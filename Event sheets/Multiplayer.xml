@@ -20,7 +20,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action behavior="8Direction" id="7" name="Simulate control" sid="376552077477653" type="player2">
+                        <action behavior="8Direction" id="7" name="Simulate control" sid="376552077477653" type="playertest">
                             <param id="0" name="Control">2</param>
                         </action>
                     </actions>
@@ -32,7 +32,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action behavior="8Direction" id="7" name="Simulate control" sid="721337132012295" type="player2">
+                        <action behavior="8Direction" id="7" name="Simulate control" sid="721337132012295" type="playertest">
                             <param id="0" name="Control">0</param>
                         </action>
                     </actions>
@@ -44,7 +44,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action behavior="8Direction" id="7" name="Simulate control" sid="825506810735706" type="player2">
+                        <action behavior="8Direction" id="7" name="Simulate control" sid="825506810735706" type="playertest">
                             <param id="0" name="Control">1</param>
                         </action>
                     </actions>
@@ -56,14 +56,14 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action behavior="8Direction" id="7" name="Simulate control" sid="271096815012320" type="player2">
+                        <action behavior="8Direction" id="7" name="Simulate control" sid="271096815012320" type="playertest">
                             <param id="0" name="Control">3</param>
                         </action>
                     </actions>
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group description="" sid="395235545112143" title="Player 3">
+        <event-group description="" sid="395235545112143" title="Player 1">
             <sub-events>
                 <event-block sid="666236490322692">
                     <conditions>
@@ -113,8 +113,807 @@
                         </action>
                     </actions>
                 </event-block>
-                <event-group description="" sid="786581794457470" title="Player1 x Player2 Colision2" />
             </sub-events>
         </event-group>
+        <comment>Reiniciar a escala de tempo, definir a posição da cabeça de cobra, definir a variável de crescimento</comment>
+        <event-group description="" sid="927051106475523" title="Player moviment2" />
+        <event-block sid="727096157338681">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="489914892668078" type="System" />
+            </conditions>
+            <actions>
+                <action id="-13" name="Set time scale" sid="330687500457412" type="System">
+                    <param id="0" name="Time scale">1.0</param>
+                </action>
+                <action id="-3" name="Set position" sid="875470384769489" type="player1">
+                    <param id="0" name="X">640</param>
+                    <param id="1" name="Y">400</param>
+                </action>
+                <action id="-9" name="Set value" sid="970260649093736" type="System">
+                    <param id="0" name="Variable">GrowthP2</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="663229940277924" type="System">
+                    <param id="0" name="Variable">ScoreP2</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>Configurar a criação de Sprite, mover 0 = iniciar move2 = quando você come o gafanhoto, definir a velocidade, mover gafanhoto.</comment>
+        <event-block sid="661505308738670">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="932209004952406" type="System" />
+            </conditions>
+            <actions>
+                <action behavior="8Direction" id="3" name="Set speed" sid="805006974077716" type="player1">
+                    <param id="0" name="Speed">225</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="400704441730164">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="100125688644604" type="System">
+                            <param id="0" name="Variable">Move</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="477485186460922" type="System">
+                            <param id="0" name="Object to create">bodytail</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">lerp(player1.ImagePointX(0),player1.ImagePointX(0),0.9)</param>
+                            <param id="3" name="Y">lerp(player1.ImagePointY(0),player1.ImagePointY(0),0.9)</param>
+                        </action>
+                        <action id="-29" name="Move to object" sid="829955441561846" type="bodytail">
+                            <param id="0" name="Where">1</param>
+                            <param id="1" name="Object">player1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="849003127137718">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="353823641818505" type="System">
+                            <param id="0" name="Variable">Move</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="932531854872918" type="System">
+                            <param id="0" name="Object to create">bodytail</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">lerp(player1.ImagePointX(0),player1.ImagePointX(0),0.9)</param>
+                            <param id="3" name="Y">lerp(player1.ImagePointY(0),player1.ImagePointY(0),0.9)</param>
+                        </action>
+                        <action id="-29" name="Move to object" sid="860392546405447" type="bodytail">
+                            <param id="0" name="Where">1</param>
+                            <param id="1" name="Object">player1</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="807016176827200" type="puppy">
+                            <param id="0" name="X">random(1000)+40</param>
+                            <param id="1" name="Y">random(600)+40</param>
+                        </action>
+                        <action id="-29" name="Move to object" sid="729638193206564" type="puppy">
+                            <param id="0" name="Where">0</param>
+                            <param id="1" name="Object">bodytail</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="455808040521170" type="System">
+                            <param id="0" name="Variable">Move</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <comment>Espere segundos de crescimento e, em seguida, destrua o sprite.</comment>
+        <event-block sid="103479627567703">
+            <conditions>
+                <condition id="-18" name="On created" sid="405858080248195" type="bodytail" />
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="373579857642799" type="System">
+                    <param id="0" name="Seconds">GrowthP2</param>
+                </action>
+                <action id="-9" name="Destroy" sid="886149628569747" type="bodytail" />
+            </actions>
+        </event-block>
+        <event-group description="" sid="863608913520618" title="Colision Player 2 Event" />
+        <event-block sid="644764174579243">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="685028209931747" type="player1">
+                    <param id="0" name="Object">puppy</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="192416680495295" type="System">
+                    <param id="0" name="Variable">Move</param>
+                    <param id="1" name="Value">2</param>
+                </action>
+                <action id="-10" name="Add to" sid="671707562383017" type="System">
+                    <param id="0" name="Variable">GrowthP2</param>
+                    <param id="1" name="Value">0.1</param>
+                </action>
+                <action id="-10" name="Add to" sid="737969337489530" type="System">
+                    <param id="0" name="Variable">ScoreP2</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Play" sid="967929273264693" type="Audio">
+                    <param id="0" name="Audio file">latido</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>Isto é para iniciar a cobra movendo-se no início</comment>
+        <event-block sid="732978559630451">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="552762089250912" type="System">
+                    <param id="0" name="Variable">Start</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="8Direction" id="7" name="Simulate control" sid="605110649807087" type="player1">
+                    <param id="0" name="Control">3</param>
+                </action>
+                <action id="-16" name="Wait" sid="202109936581662" type="System">
+                    <param id="0" name="Seconds">0.01</param>
+                </action>
+                <action id="-9" name="Set value" sid="508247405431133" type="System">
+                    <param id="0" name="Variable">Start</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>Isto é para terminar o jogo, temos que tê-lo definido para animação 3 caso contrário, o jogo vai acabar de imediato, porque a cabeça está sobreposta os quadros</comment>
+        <event-block sid="357293159494754">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="912464893448352" type="player1">
+                    <param id="0" name="Object">bodytail</param>
+                </condition>
+                <condition id="3" name="Compare frame" sid="696413091758859" type="bodytail">
+                    <param id="0" name="Comparison">5</param>
+                    <param id="1" name="Number">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-13" name="Set time scale" sid="107445337769436" type="System">
+                    <param id="0" name="Time scale">0</param>
+                </action>
+                <action id="-10" name="Set value" sid="570185179845055" type="bodytail">
+                    <param id="0" name="Instance variable">Variable1</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Play" sid="259318637116098" type="Audio">
+                    <param id="0" name="Audio file">game-over</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="464044728051796">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="491331153404856" type="player1">
+                    <param id="0" name="Object">house</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-13" name="Set time scale" sid="316288242418104" type="System">
+                    <param id="0" name="Time scale">0</param>
+                </action>
+                <action id="-10" name="Set value" sid="639387553005147" type="bodytail">
+                    <param id="0" name="Instance variable">Variable1</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="33" name="Stop all" sid="433913252783738" type="Audio" />
+                <action id="0" name="Play" sid="122044462260097" type="Audio">
+                    <param id="0" name="Audio file">game-over</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="257190089581258">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="193589205470459" type="player1">
+                    <param id="0" name="Object">hydrante</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-13" name="Set time scale" sid="651365752618552" type="System">
+                    <param id="0" name="Time scale">0</param>
+                </action>
+                <action id="-10" name="Set value" sid="395913212877839" type="bodytail">
+                    <param id="0" name="Instance variable">Variable1</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="33" name="Stop all" sid="438579231003197" type="Audio" />
+                <action id="0" name="Play" sid="577215536163242" type="Audio">
+                    <param id="0" name="Audio file">game-over</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="895233023085863">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="530224216700591" type="player1">
+                    <param id="0" name="Object">postoffice</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-13" name="Set time scale" sid="704598956016984" type="System">
+                    <param id="0" name="Time scale">0</param>
+                </action>
+                <action id="-10" name="Set value" sid="442402555306627" type="bodytail">
+                    <param id="0" name="Instance variable">Variable1</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="33" name="Stop all" sid="657742227606994" type="Audio" />
+                <action id="0" name="Play" sid="719156321300631" type="Audio">
+                    <param id="0" name="Audio file">game-over</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="585984320401963">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="797654828140460" type="player1">
+                    <param id="0" name="Object">fence</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-13" name="Set time scale" sid="981242406165282" type="System">
+                    <param id="0" name="Time scale">0</param>
+                </action>
+                <action id="-10" name="Set value" sid="874817488356573" type="bodytail">
+                    <param id="0" name="Instance variable">Variable1</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="33" name="Stop all" sid="165557058920710" type="Audio" />
+                <action id="0" name="Play" sid="535558849479903" type="Audio">
+                    <param id="0" name="Audio file">game-over</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="614956407206852">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="627720795013481" type="player1">
+                    <param id="0" name="Object">car</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-13" name="Set time scale" sid="844665398248771" type="System">
+                    <param id="0" name="Time scale">0</param>
+                </action>
+                <action id="-10" name="Set value" sid="796768000043478" type="bodytail">
+                    <param id="0" name="Instance variable">Variable1</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="33" name="Stop all" sid="943867118453822" type="Audio" />
+                <action id="0" name="Play" sid="272410582174452" type="Audio">
+                    <param id="0" name="Audio file">game-over</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="481151637809394">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="692142855948280" type="player1">
+                    <param id="0" name="Object">policedepartment</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-13" name="Set time scale" sid="841073112632670" type="System">
+                    <param id="0" name="Time scale">1</param>
+                </action>
+                <action id="-10" name="Set value" sid="781888976470354" type="bodytail">
+                    <param id="0" name="Instance variable">Variable1</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="33" name="Stop all" sid="158526468774546" type="Audio" />
+                <action id="0" name="Play" sid="852854171357123" type="Audio">
+                    <param id="0" name="Audio file">game-over</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" sid="303592003191924" title="Game Over Player2 event" />
+        <comment>Isso é para definir o texto com a pontuação, e quando você morreu</comment>
+        <event-block sid="298246253781100">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="647537916662747" type="bodytail">
+                    <param id="0" name="Instance variable">Variable1</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="398072943583667" type="SpriteFont">
+                    <param id="0" name="Text">&quot;Score &quot;&amp;Score</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="251488350888646">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="569939634235631" type="bodytail">
+                    <param id="0" name="Instance variable">Variable1</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Set Y" sid="402498315974753" type="SpriteFont">
+                    <param id="0" name="Y">400</param>
+                </action>
+                <action id="0" name="Set text" sid="668865012885894" type="SpriteFont">
+                    <param id="0" name="Text">&quot;Score &quot;&amp;Score</param>
+                </action>
+                <action id="0" name="Set text" sid="659632746493801" type="SpriteFont">
+                    <param id="0" name="Text">&quot;Fim de Jogo!! &#x0D;&#x0A;Voce marcou: &quot;&amp;Score&amp;newline&amp;&quot; &#x0D;&#x0A;Pressione barra de espaco &#x0D;&#x0A;para tentar novamente.&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>Isto é para reiniciar o jogo quando barra de espaço é pressionada</comment>
+        <event-block sid="289219348459229">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="209854669237399" type="bodytail">
+                    <param id="0" name="Instance variable">Variable1</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+                <condition id="-4" name="Trigger once while true" sid="730803988197076" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Submit score" sid="808977454275880" type="ScirraArcade">
+                    <param id="0" name="Leaderboard ID">&quot;snakey&quot;</param>
+                    <param id="1" name="Score">Score</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="340087319484009">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="316407286158108" type="Keyboard">
+                    <param id="0" name="Key">32 (Space)</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="212323488785762" type="bodytail">
+                    <param id="0" name="Instance variable">Variable1</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-26" name="Restart layout" sid="488540478609316" type="System" />
+            </actions>
+        </event-block>
+        <event-group description="" sid="463393320079598" title="Player moviment3" />
+        <event-block sid="735819552522551">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="942823804888147" type="System" />
+            </conditions>
+            <actions>
+                <action id="-13" name="Set time scale" sid="589190571768924" type="System">
+                    <param id="0" name="Time scale">1.0</param>
+                </action>
+                <action id="-3" name="Set position" sid="898193910502839" type="player1">
+                    <param id="0" name="X">640</param>
+                    <param id="1" name="Y">400</param>
+                </action>
+                <action id="-9" name="Set value" sid="984326526904797" type="System">
+                    <param id="0" name="Variable">Growth</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="513712548677706" type="System">
+                    <param id="0" name="Variable">Score</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>Configurar a criação de Sprite, mover 0 = iniciar move2 = quando você come o gafanhoto, definir a velocidade, mover gafanhoto.</comment>
+        <event-block sid="334469176646104">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="576744774779207" type="System" />
+            </conditions>
+            <actions>
+                <action behavior="8Direction" id="3" name="Set speed" sid="273547708788188" type="player1">
+                    <param id="0" name="Speed">225</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="688536338786126">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="661811570607878" type="System">
+                            <param id="0" name="Variable">Move</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="954179609159081" type="System">
+                            <param id="0" name="Object to create">bodytail</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">lerp(player1.ImagePointX(0),player1.ImagePointX(0),0.9)</param>
+                            <param id="3" name="Y">lerp(player1.ImagePointY(0),player1.ImagePointY(0),0.9)</param>
+                        </action>
+                        <action id="-29" name="Move to object" sid="743271379961914" type="bodytail">
+                            <param id="0" name="Where">1</param>
+                            <param id="1" name="Object">player1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="599307658257835">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="650694315829632" type="System">
+                            <param id="0" name="Variable">Move</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="501392905777829" type="System">
+                            <param id="0" name="Object to create">bodytail</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">lerp(player1.ImagePointX(0),player1.ImagePointX(0),0.9)</param>
+                            <param id="3" name="Y">lerp(player1.ImagePointY(0),player1.ImagePointY(0),0.9)</param>
+                        </action>
+                        <action id="-29" name="Move to object" sid="914240423246428" type="bodytail">
+                            <param id="0" name="Where">1</param>
+                            <param id="1" name="Object">player1</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="220758913594759" type="puppy">
+                            <param id="0" name="X">random(1000)+40</param>
+                            <param id="1" name="Y">random(600)+40</param>
+                        </action>
+                        <action id="-29" name="Move to object" sid="227445667246591" type="puppy">
+                            <param id="0" name="Where">0</param>
+                            <param id="1" name="Object">bodytail</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="600352045796551" type="System">
+                            <param id="0" name="Variable">Move</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <comment>Espere segundos de crescimento e, em seguida, destrua o sprite.</comment>
+        <event-block sid="147010347635930">
+            <conditions>
+                <condition id="-18" name="On created" sid="479988508117745" type="bodytail" />
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="660578182965530" type="System">
+                    <param id="0" name="Seconds">growth</param>
+                </action>
+                <action id="-9" name="Destroy" sid="880563671789261" type="bodytail" />
+            </actions>
+        </event-block>
+        <event-group description="" sid="230925696466099" title="Colision events3" />
+        <event-block sid="433133551887564">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="367703778252601" type="player1">
+                    <param id="0" name="Object">puppy</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="917443664670255" type="System">
+                    <param id="0" name="Variable">Move</param>
+                    <param id="1" name="Value">2</param>
+                </action>
+                <action id="-10" name="Add to" sid="360969120943179" type="System">
+                    <param id="0" name="Variable">Growth</param>
+                    <param id="1" name="Value">0.1</param>
+                </action>
+                <action id="-10" name="Add to" sid="326962578851261" type="System">
+                    <param id="0" name="Variable">Score</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Play" sid="895631875031305" type="Audio">
+                    <param id="0" name="Audio file">latido</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>Isto é para iniciar a cobra movendo-se no início</comment>
+        <event-block sid="410084515344710">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="220530225239754" type="System">
+                    <param id="0" name="Variable">Start</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="8Direction" id="7" name="Simulate control" sid="919960803137598" type="player1">
+                    <param id="0" name="Control">3</param>
+                </action>
+                <action id="-16" name="Wait" sid="315625023860862" type="System">
+                    <param id="0" name="Seconds">0.01</param>
+                </action>
+                <action id="-9" name="Set value" sid="960505883775745" type="System">
+                    <param id="0" name="Variable">Start</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>Isto é para terminar o jogo, temos que tê-lo definido para animação 3 caso contrário, o jogo vai acabar de imediato, porque a cabeça está sobreposta os quadros</comment>
+        <event-block sid="745548170734773">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="365187353811594" type="player1">
+                    <param id="0" name="Object">bodytail</param>
+                </condition>
+                <condition id="3" name="Compare frame" sid="980656084488642" type="bodytail">
+                    <param id="0" name="Comparison">5</param>
+                    <param id="1" name="Number">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-13" name="Set time scale" sid="312995501375191" type="System">
+                    <param id="0" name="Time scale">0</param>
+                </action>
+                <action id="-10" name="Set value" sid="646866001043414" type="bodytail">
+                    <param id="0" name="Instance variable">Variable1</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Play" sid="128151285841598" type="Audio">
+                    <param id="0" name="Audio file">game-over</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="360262615265871">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="672947642395136" type="player1">
+                    <param id="0" name="Object">house</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-13" name="Set time scale" sid="244073627085368" type="System">
+                    <param id="0" name="Time scale">0</param>
+                </action>
+                <action id="-10" name="Set value" sid="172661603573653" type="bodytail">
+                    <param id="0" name="Instance variable">Variable1</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="33" name="Stop all" sid="455644852549046" type="Audio" />
+                <action id="0" name="Play" sid="380862377864199" type="Audio">
+                    <param id="0" name="Audio file">game-over</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="282015158379590">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="573591522919681" type="player1">
+                    <param id="0" name="Object">hydrante</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-13" name="Set time scale" sid="868176948932148" type="System">
+                    <param id="0" name="Time scale">0</param>
+                </action>
+                <action id="-10" name="Set value" sid="440956492060996" type="bodytail">
+                    <param id="0" name="Instance variable">Variable1</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="33" name="Stop all" sid="455190599101052" type="Audio" />
+                <action id="0" name="Play" sid="889891837278197" type="Audio">
+                    <param id="0" name="Audio file">game-over</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="774361134909525">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="807986495157409" type="player1">
+                    <param id="0" name="Object">postoffice</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-13" name="Set time scale" sid="938335831375936" type="System">
+                    <param id="0" name="Time scale">0</param>
+                </action>
+                <action id="-10" name="Set value" sid="786318304934444" type="bodytail">
+                    <param id="0" name="Instance variable">Variable1</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="33" name="Stop all" sid="461990248899442" type="Audio" />
+                <action id="0" name="Play" sid="268649027740094" type="Audio">
+                    <param id="0" name="Audio file">game-over</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="623155538848394">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="732306411010955" type="player1">
+                    <param id="0" name="Object">fence</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-13" name="Set time scale" sid="125759029448579" type="System">
+                    <param id="0" name="Time scale">0</param>
+                </action>
+                <action id="-10" name="Set value" sid="127901023145370" type="bodytail">
+                    <param id="0" name="Instance variable">Variable1</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="33" name="Stop all" sid="707732437412205" type="Audio" />
+                <action id="0" name="Play" sid="261478255984517" type="Audio">
+                    <param id="0" name="Audio file">game-over</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="890810000619019">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="291742056887156" type="player1">
+                    <param id="0" name="Object">car</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-13" name="Set time scale" sid="320901796723189" type="System">
+                    <param id="0" name="Time scale">0</param>
+                </action>
+                <action id="-10" name="Set value" sid="334689766270311" type="bodytail">
+                    <param id="0" name="Instance variable">Variable1</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="33" name="Stop all" sid="964822679398420" type="Audio" />
+                <action id="0" name="Play" sid="651725534011068" type="Audio">
+                    <param id="0" name="Audio file">game-over</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="117986316928829">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="282065745648713" type="player1">
+                    <param id="0" name="Object">policedepartment</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-13" name="Set time scale" sid="703213524151421" type="System">
+                    <param id="0" name="Time scale">1</param>
+                </action>
+                <action id="-10" name="Set value" sid="202092289072184" type="bodytail">
+                    <param id="0" name="Instance variable">Variable1</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="33" name="Stop all" sid="320031151329089" type="Audio" />
+                <action id="0" name="Play" sid="510627034956535" type="Audio">
+                    <param id="0" name="Audio file">game-over</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" sid="309728817575293" title="Game Over Player 2" />
+        <comment>Isso é para definir o texto com a pontuação, e quando você morreu</comment>
+        <event-block sid="957810476916825">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="699819030184302" type="bodytail">
+                    <param id="0" name="Instance variable">Variable1</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="123917882986924" type="SpriteFont">
+                    <param id="0" name="Text">&quot;Score &quot;&amp; ScoreP2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="255401503350796">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="576080997416937" type="bodytail">
+                    <param id="0" name="Instance variable">Variable1</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Set Y" sid="545724044445004" type="SpriteFont">
+                    <param id="0" name="Y">400</param>
+                </action>
+                <action id="0" name="Set text" sid="295931430358325" type="SpriteFont">
+                    <param id="0" name="Text">&quot;Score &quot;&amp;ScoreP2</param>
+                </action>
+                <action id="0" name="Set text" sid="120264690779403" type="SpriteFont">
+                    <param id="0" name="Text">&quot;GAME OVER!!!&#x0D;&#x0A;PLAYER 1: &quot;&amp;ScoreP1&amp;newline&amp;&quot; &#x0D;&#x0A;PLAYER 2: &quot;&amp;ScoreP2&amp;newline&amp;&quot; &#x0D;&#x0A;Press &lt;SPACE BAR&gt; to retry.&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>Isto é para reiniciar o jogo quando barra de espaço é pressionada</comment>
+        <event-block sid="853594528657617">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="159692754879586" type="bodytail">
+                    <param id="0" name="Instance variable">Variable1</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+                <condition id="-4" name="Trigger once while true" sid="268651831755327" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Submit score" sid="356934864160302" type="ScirraArcade">
+                    <param id="0" name="Leaderboard ID">&quot;snakey&quot;</param>
+                    <param id="1" name="Score">Score</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="252384422135027">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="490840014404459" type="Keyboard">
+                    <param id="0" name="Key">32 (Space)</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="662895033600990" type="bodytail">
+                    <param id="0" name="Instance variable">Variable1</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-26" name="Restart layout" sid="367025408089650" type="System" />
+            </actions>
+        </event-block>
+        <event-group description="" sid="278004788697126" title="Car event Multiplayer" />
+        <event-block sid="564693877241271">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="515405115693593" type="System">
+                    <param id="0" name="Interval (seconds)">10</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="190648336381130" type="System">
+                    <param id="0" name="Object to create">car</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">610</param>
+                    <param id="3" name="Y">-55</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="527329097480667">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="905893303466113" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="998761120487831" type="Audio">
+                    <param id="0" name="Audio file">8bit Dogsong - Undertale</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

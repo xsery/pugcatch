@@ -102,14 +102,14 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>202</x>
-                        <y>633</y>
+                        <x>286.339538574</x>
+                        <y>596</y>
                         <z>0</z>
-                        <width>377</width>
-                        <height>190</height>
+                        <width>240.381958008</width>
+                        <height>92.210525513</height>
                         <depth>0</depth>
-                        <hotspotX>0.501326263</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotX>0.516949177</hotspotX>
+                        <hotspotY>0.55479455</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -124,8 +124,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>503</x>
-                        <y>630</y>
+                        <x>528</x>
+                        <y>606</y>
                         <z>0</z>
                         <width>110.806610107</width>
                         <height>77.730010986</height>
@@ -146,8 +146,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>706</x>
-                        <y>638</y>
+                        <x>707</x>
+                        <y>600</y>
                         <z>0</z>
                         <width>138</width>
                         <height>118</height>
@@ -163,5 +163,14 @@
         </layer>
     </layers>
     <nonworld-instances />
-    <effects />
+    <effects>
+        <effect-type name="BlurVertical">
+            <effect id="blurvertical" />
+            <effect-instance type="BlurVertical">
+                <parameters>
+                    <intensity>1</intensity>
+                </parameters>
+            </effect-instance>
+        </effect-type>
+    </effects>
 </c2layout>
