@@ -116,7 +116,6 @@
             </sub-events>
         </event-group>
         <comment>Reiniciar a escala de tempo, definir a posição da cabeça de cobra, definir a variável de crescimento</comment>
-        <event-group description="" sid="927051106475523" title="Player moviment2" />
         <event-block sid="727096157338681">
             <conditions>
                 <condition id="-2" name="On start of layout" sid="489914892668078" type="System" />
@@ -218,7 +217,6 @@
                 <action id="-9" name="Destroy" sid="886149628569747" type="bodytail" />
             </actions>
         </event-block>
-        <event-group description="" sid="863608913520618" title="Colision Player 2 Event" />
         <event-block sid="644764174579243">
             <conditions>
                 <condition id="0" name="On collision with another object" sid="685028209931747" type="player1">
@@ -433,7 +431,6 @@
                 </action>
             </actions>
         </event-block>
-        <event-group description="" sid="303592003191924" title="Game Over Player2 event" />
         <comment>Isso é para definir o texto com a pontuação, e quando você morreu</comment>
         <event-block sid="298246253781100">
             <conditions>
@@ -501,7 +498,6 @@
                 <action id="-26" name="Restart layout" sid="488540478609316" type="System" />
             </actions>
         </event-block>
-        <event-group description="" sid="463393320079598" title="Player moviment3" />
         <event-block sid="735819552522551">
             <conditions>
                 <condition id="-2" name="On start of layout" sid="942823804888147" type="System" />
@@ -603,7 +599,6 @@
                 <action id="-9" name="Destroy" sid="880563671789261" type="bodytail" />
             </actions>
         </event-block>
-        <event-group description="" sid="230925696466099" title="Colision events3" />
         <event-block sid="433133551887564">
             <conditions>
                 <condition id="0" name="On collision with another object" sid="367703778252601" type="player1">
@@ -818,7 +813,6 @@
                 </action>
             </actions>
         </event-block>
-        <event-group description="" sid="309728817575293" title="Game Over Player 2" />
         <comment>Isso é para definir o texto com a pontuação, e quando você morreu</comment>
         <event-block sid="957810476916825">
             <conditions>
@@ -886,7 +880,6 @@
                 <action id="-26" name="Restart layout" sid="367025408089650" type="System" />
             </actions>
         </event-block>
-        <event-group description="" sid="278004788697126" title="Car event Multiplayer" />
         <event-block sid="564693877241271">
             <conditions>
                 <condition id="-6" name="Every X seconds" sid="515405115693593" type="System">

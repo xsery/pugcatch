@@ -102,8 +102,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>286.339538574</x>
-                        <y>596</y>
+                        <x>352</x>
+                        <y>549</y>
                         <z>0</z>
                         <width>240.381958008</width>
                         <height>92.210525513</height>
@@ -124,8 +124,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>528</x>
-                        <y>606</y>
+                        <x>566</x>
+                        <y>547</y>
                         <z>0</z>
                         <width>110.806610107</width>
                         <height>77.730010986</height>
@@ -146,8 +146,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>707</x>
-                        <y>600</y>
+                        <x>471</x>
+                        <y>683</y>
                         <z>0</z>
                         <width>138</width>
                         <height>118</height>
@@ -163,14 +163,5 @@
         </layer>
     </layers>
     <nonworld-instances />
-    <effects>
-        <effect-type name="BlurVertical">
-            <effect id="blurvertical" />
-            <effect-instance type="BlurVertical">
-                <parameters>
-                    <intensity>1</intensity>
-                </parameters>
-            </effect-instance>
-        </effect-type>
-    </effects>
+    <effects />
 </c2layout>

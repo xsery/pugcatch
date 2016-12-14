@@ -23,7 +23,6 @@
         <behavior author="Scirra" id="wrap" version="1">Wrap</behavior>
     </used-behaviors>
     <used-effects>
-        <effect author="Scirra" id="blurvertical">Blur Vertical</effect>
         <effect author="Scirra" id="pixellate">Pixellate</effect>
     </used-effects>
     <configurations>
@@ -180,14 +179,14 @@
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="544028871065569" speed="5">
                     <frame duration="1" hotspotX="0.509091" hotspotY="0.525641" original-source="C:\Users\irlan.gomes\Documents\font\uea\pugcatch\Assets\oficiais\Layou 2\casas\casa_01.png">
                         <collision-poly>
-                            <point x="0.232591" y="0.238622" />
-                            <point x="0.506818" y="0.0121439" />
-                            <point x="0.77961" y="0.240055" />
-                            <point x="0.999279" y="0.522436" />
-                            <point x="0.903084" y="0.92809" />
-                            <point x="0.506818" y="0.981125" />
-                            <point x="0.104809" y="0.933823" />
-                            <point x="0.00574298" y="0.522436" />
+                            <point x="0.164409" y="0.18734" />
+                            <point x="0.425" y="0.0954772" />
+                            <point x="0.652337" y="0.175952" />
+                            <point x="0.694734" y="0.554487" />
+                            <point x="0.698539" y="0.838346" />
+                            <point x="0.470454" y="0.833689" />
+                            <point x="0.109354" y="0.831259" />
+                            <point x="0.119379" y="0.637821" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -199,14 +198,14 @@
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="343657091279317" speed="5">
                     <frame duration="1" hotspotX="0.504732" hotspotY="0.494898" original-source="C:\Users\irlan.gomes\Documents\font\uea\pugcatch\Assets\oficiais\Layou 2\casas\casa_02.png">
                         <collision-poly>
-                            <point x="0.284596" y="0.135176" />
-                            <point x="0.504732" y="0" />
-                            <point x="0.702576" y="0.146287" />
-                            <point x="0.958938" y="0.494898" />
-                            <point x="0.730442" y="0.857398" />
-                            <point x="0.504732" y="0.993509" />
-                            <point x="0.226078" y="0.883787" />
-                            <point x="0.145268" y="0.494898" />
+                            <point x="0.152104" y="0.130074" />
+                            <point x="0.460568" y="0.107143" />
+                            <point x="0.652103" y="0.151389" />
+                            <point x="0.690799" y="0.443878" />
+                            <point x="0.70836" y="0.877806" />
+                            <point x="0.501577" y="0.87106" />
+                            <point x="0.115668" y="0.873583" />
+                            <point x="0.113722" y="0.668367" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -242,12 +241,14 @@
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="937017250500627" speed="5">
                     <frame duration="1" hotspotX="0.508361" hotspotY="0.47619" original-source="C:\Users\irlan.gomes\Documents\font\uea\pugcatch\Assets\oficiais\Layou 2\casas\casa_03.png">
                         <collision-poly>
-                            <point x="0.446495" y="0.411348" />
-                            <point x="0.508361" y="0.0553269" />
-                            <point x="0.497695" y="0.484268" />
-                            <point x="0.497695" y="0.462822" />
-                            <point x="0.508361" y="0.945381" />
-                            <point x="0.450761" y="0.531453" />
+                            <point x="0.32107" y="0.164021" />
+                            <point x="0.58194" y="0.0846561" />
+                            <point x="0.832776" y="0.169312" />
+                            <point x="0.87291" y="0.587302" />
+                            <point x="0.87291" y="0.867725" />
+                            <point x="0.585284" y="0.873016" />
+                            <point x="0.287625" y="0.862434" />
+                            <point x="0.29097" y="0.497355" />
                         </collision-poly>
                     </frame>
                 </animation>

@@ -31,7 +31,6 @@
             </actions>
         </event-block>
         <comment>Configurar a criação de Sprite, mover 0 = iniciar move2 = quando você come o gafanhoto, definir a velocidade, mover gafanhoto.</comment>
-        <event-group description="" sid="861521036729918" title="Player moviment" />
         <event-block sid="7649624673826636">
             <conditions>
                 <condition id="-1" name="Every tick" sid="1086829426823647" type="System" />
@@ -110,7 +109,6 @@
                 <action id="-9" name="Destroy" sid="9471867100764614" type="bodytail" />
             </actions>
         </event-block>
-        <event-group description="" sid="771506893720121" title="Colision events" />
         <event-block sid="3431727420399114">
             <conditions>
                 <condition id="0" name="On collision with another object" sid="1098655869953786" type="player1">
@@ -325,7 +323,6 @@
                 </action>
             </actions>
         </event-block>
-        <event-group description="" sid="313936468809677" title="Game Over event" />
         <comment>Isso é para definir o texto com a pontuação, e quando você morreu</comment>
         <event-block sid="6026138433525782">
             <conditions>
@@ -393,7 +390,6 @@
                 <action id="-26" name="Restart layout" sid="4900181842229484" type="System" />
             </actions>
         </event-block>
-        <event-group description="" sid="890359470951293" title="Car event" />
         <event-block sid="346778684931452">
             <conditions>
                 <condition id="-6" name="Every X seconds" sid="825622815380423" type="System">
